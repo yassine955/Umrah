@@ -1,0 +1,1622 @@
+{
+  "search_metadata": {
+    "id": "68bdc40618dc93d91172c103",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/f833f8019a4a0dad/68bdc40618dc93d91172c103.json",
+    "created_at": "2025-09-07 17:42:30 UTC",
+    "processed_at": "2025-09-07 17:42:30 UTC",
+    "google_flights_url": "https://www.google.com/travel/flights?hl=en&gl=nl&curr=EUR&tfs=CBwQAhoeEgoyMDI1LTA5LTEwagcIARIDQ01OcgcIARIDTUVEGh4SCjIwMjUtMDktMjBqBwgBEgNNRURyBwgBEgNDTU5CAgEBSAFwAZgBAQ&tfu=EgIIAg",
+    "raw_html_file": "https://serpapi.com/searches/f833f8019a4a0dad/68bdc40618dc93d91172c103.html",
+    "prettify_html_file": "https://serpapi.com/searches/f833f8019a4a0dad/68bdc40618dc93d91172c103.prettify",
+    "total_time_taken": 0.71
+  },
+  "search_parameters": {
+    "engine": "google_flights",
+    "hl": "en",
+    "gl": "nl",
+    "type": "1",
+    "departure_id": "CMN",
+    "arrival_id": "MED",
+    "outbound_date": "2025-09-10",
+    "return_date": "2025-09-20",
+    "adults": 2,
+    "currency": "EUR",
+    "sort_by": "2"
+  },
+  "other_flights": [
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Casablanca Mohammed V International Airport",
+            "id": "CMN",
+            "time": "2025-09-10 02:40"
+          },
+          "arrival_airport": {
+            "name": "Prince Mohammad Bin Abdulaziz International Airport",
+            "id": "MED",
+            "time": "2025-09-10 10:40"
+          },
+          "duration": 360,
+          "airplane": "Airbus A330",
+          "airline": "Royal Air Maroc",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AT.png",
+          "travel_class": "Economy",
+          "flight_number": "AT 248",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Stream media to your device",
+            "Carbon emissions estimate: 675 kg"
+          ],
+          "overnight": true,
+          "plane_and_crew_by": "HI Fly Ltd"
+        }
+      ],
+      "total_duration": 360,
+      "carbon_emissions": {
+        "this_flight": 675000,
+        "typical_for_this_route": 870000,
+        "difference_percent": -22
+      },
+      "price": 1854,
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AT.png",
+      "departure_token": "WyJDalJJTUZKUU1GVkpXVkkxYWpSQlRWbGFlRUZDUnkwdExTMHRMUzB0TFMxdmEzWmlPVUZCUVVGQlIyazVlRUZaU1Roc1RTMUJFZ1ZCVkRJME9Cb0xDSlNvQ3hBQ0dnTkZWVkk0SEhDNm9RMD0iLFtbIkNNTiIsIjIwMjUtMDktMTAiLCJNRUQiLG51bGwsIkFUIiwiMjQ4Il1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Casablanca Mohammed V International Airport",
+            "id": "CMN",
+            "time": "2025-09-10 14:45"
+          },
+          "arrival_airport": {
+            "name": "Dubai International Airport",
+            "id": "DXB",
+            "time": "2025-09-11 01:15"
+          },
+          "duration": 450,
+          "airplane": "Airbus A380",
+          "airline": "Emirates",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EK.png",
+          "travel_class": "Economy",
+          "flight_number": "EK 752",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 816 kg"
+          ],
+          "often_delayed_by_over_30_min": true
+        },
+        {
+          "departure_airport": {
+            "name": "Dubai International Airport",
+            "id": "DXB",
+            "time": "2025-09-11 14:30"
+          },
+          "arrival_airport": {
+            "name": "Prince Mohammad Bin Abdulaziz International Airport",
+            "id": "MED",
+            "time": "2025-09-11 16:00"
+          },
+          "duration": 150,
+          "airplane": "Boeing 777",
+          "airline": "Emirates",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EK.png",
+          "travel_class": "Economy",
+          "flight_number": "EK 809",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 277 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 795,
+          "name": "Dubai International Airport",
+          "id": "DXB",
+          "overnight": true
+        }
+      ],
+      "total_duration": 1395,
+      "carbon_emissions": {
+        "this_flight": 1094000,
+        "typical_for_this_route": 870000,
+        "difference_percent": 26
+      },
+      "price": 1920,
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EK.png",
+      "departure_token": "WyJDalJJTUZKUU1GVkpXVkkxYWpSQlRWbGFlRUZDUnkwdExTMHRMUzB0TFMxdmEzWmlPVUZCUVVGQlIyazVlRUZaU1Roc1RTMUJFZ3RGU3pjMU1ueEZTemd3T1JvTENNTGJDeEFDR2dORlZWSTRISERVM1EwPSIsW1siQ01OIiwiMjAyNS0wOS0xMCIsIkRYQiIsbnVsbCwiRUsiLCI3NTIiXSxbIkRYQiIsIjIwMjUtMDktMTEiLCJNRUQiLG51bGwsIkVLIiwiODA5Il1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Casablanca Mohammed V International Airport",
+            "id": "CMN",
+            "time": "2025-09-10 14:45"
+          },
+          "arrival_airport": {
+            "name": "Dubai International Airport",
+            "id": "DXB",
+            "time": "2025-09-11 01:15"
+          },
+          "duration": 450,
+          "airplane": "Airbus A380",
+          "airline": "Emirates",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EK.png",
+          "travel_class": "Economy",
+          "flight_number": "EK 752",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 816 kg"
+          ],
+          "often_delayed_by_over_30_min": true
+        },
+        {
+          "departure_airport": {
+            "name": "Dubai International Airport",
+            "id": "DXB",
+            "time": "2025-09-11 14:35"
+          },
+          "arrival_airport": {
+            "name": "Prince Mohammad Bin Abdulaziz International Airport",
+            "id": "MED",
+            "time": "2025-09-11 16:20"
+          },
+          "duration": 165,
+          "airplane": "Boeing 737MAX 8 Passenger",
+          "airline": "flydubai",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/FZ.png",
+          "travel_class": "Economy",
+          "flight_number": "FZ 897",
+          "ticket_also_sold_by": [
+            "Emirates"
+          ],
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "In-seat USB outlet",
+            "On-demand video",
+            "Carbon emissions estimate: 247 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 800,
+          "name": "Dubai International Airport",
+          "id": "DXB",
+          "overnight": true
+        }
+      ],
+      "total_duration": 1415,
+      "carbon_emissions": {
+        "this_flight": 1064000,
+        "typical_for_this_route": 870000,
+        "difference_percent": 22
+      },
+      "price": 1920,
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+      "departure_token": "WyJDalJJTUZKUU1GVkpXVkkxYWpSQlRWbGFlRUZDUnkwdExTMHRMUzB0TFMxdmEzWmlPVUZCUVVGQlIyazVlRUZaU1Roc1RTMUJFZ3RGU3pjMU1ueEdXamc1TnhvTENNTGJDeEFDR2dORlZWSTRISERVM1EwPSIsW1siQ01OIiwiMjAyNS0wOS0xMCIsIkRYQiIsbnVsbCwiRUsiLCI3NTIiXSxbIkRYQiIsIjIwMjUtMDktMTEiLCJNRUQiLG51bGwsIkZaIiwiODk3Il1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Casablanca Mohammed V International Airport",
+            "id": "CMN",
+            "time": "2025-09-10 01:10"
+          },
+          "arrival_airport": {
+            "name": "Cairo International Airport",
+            "id": "CAI",
+            "time": "2025-09-10 08:30"
+          },
+          "duration": 320,
+          "airplane": "Boeing 737",
+          "airline": "Royal Air Maroc",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AT.png",
+          "travel_class": "Economy",
+          "flight_number": "AT 272",
+          "ticket_also_sold_by": [
+            "EgyptAir"
+          ],
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "Carbon emissions estimate: 627 kg"
+          ],
+          "overnight": true
+        },
+        {
+          "departure_airport": {
+            "name": "Cairo International Airport",
+            "id": "CAI",
+            "time": "2025-09-10 17:40"
+          },
+          "arrival_airport": {
+            "name": "Prince Mohammad Bin Abdulaziz International Airport",
+            "id": "MED",
+            "time": "2025-09-10 19:30"
+          },
+          "duration": 110,
+          "airplane": "Airbus A330",
+          "airline": "EgyptAir",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/MS.png",
+          "travel_class": "Business Class",
+          "flight_number": "MS 677",
+          "extensions": [
+            "Angled flat seat",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 694 kg"
+          ],
+          "often_delayed_by_over_30_min": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 550,
+          "name": "Cairo International Airport",
+          "id": "CAI"
+        }
+      ],
+      "total_duration": 980,
+      "carbon_emissions": {
+        "this_flight": 1322000,
+        "typical_for_this_route": 870000,
+        "difference_percent": 52
+      },
+      "price": 2519,
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+      "departure_token": "WyJDalJJTUZKUU1GVkpXVkkxYWpSQlRWbGFlRUZDUnkwdExTMHRMUzB0TFMxdmEzWmlPVUZCUVVGQlIyazVlRUZaU1Roc1RTMUJFZ3RCVkRJM01ueE5VelkzTnhvTENLK3ZEeEFDR2dORlZWSTRISENHZ2hJPSIsW1siQ01OIiwiMjAyNS0wOS0xMCIsIkNBSSIsbnVsbCwiQVQiLCIyNzIiXSxbIkNBSSIsIjIwMjUtMDktMTAiLCJNRUQiLG51bGwsIk1TIiwiNjc3Il1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Casablanca Mohammed V International Airport",
+            "id": "CMN",
+            "time": "2025-09-10 16:50"
+          },
+          "arrival_airport": {
+            "name": "Istanbul Airport",
+            "id": "IST",
+            "time": "2025-09-10 23:30"
+          },
+          "duration": 280,
+          "airplane": "Boeing 777",
+          "airline": "Turkish Airlines",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png",
+          "travel_class": "Economy",
+          "flight_number": "TK 618",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 519 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Istanbul Airport",
+            "id": "IST",
+            "time": "2025-09-11 00:45"
+          },
+          "arrival_airport": {
+            "name": "Prince Mohammad Bin Abdulaziz International Airport",
+            "id": "MED",
+            "time": "2025-09-11 04:05"
+          },
+          "duration": 200,
+          "airplane": "Airbus A321 (Sharklets)",
+          "airline": "Turkish Airlines",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png",
+          "travel_class": "Economy",
+          "flight_number": "TK 98",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "On-demand video",
+            "Carbon emissions estimate: 444 kg"
+          ],
+          "overnight": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 75,
+          "name": "Istanbul Airport",
+          "id": "IST"
+        }
+      ],
+      "total_duration": 555,
+      "carbon_emissions": {
+        "this_flight": 964000,
+        "typical_for_this_route": 870000,
+        "difference_percent": 11
+      },
+      "price": 2522,
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png",
+      "departure_token": "WyJDalJJTUZKUU1GVkpXVkkxYWpSQlRWbGFlRUZDUnkwdExTMHRMUzB0TFMxdmEzWmlPVUZCUVVGQlIyazVlRUZaU1Roc1RTMUJFZ3BVU3pZeE9IeFVTems0R2dzSXBySVBFQUlhQTBWVlVqZ2NjTDZGRWc9PSIsW1siQ01OIiwiMjAyNS0wOS0xMCIsIklTVCIsbnVsbCwiVEsiLCI2MTgiXSxbIklTVCIsIjIwMjUtMDktMTEiLCJNRUQiLG51bGwsIlRLIiwiOTgiXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Casablanca Mohammed V International Airport",
+            "id": "CMN",
+            "time": "2025-09-10 14:55"
+          },
+          "arrival_airport": {
+            "name": "King Abdulaziz International Airport",
+            "id": "JED",
+            "time": "2025-09-10 23:05"
+          },
+          "duration": 370,
+          "airplane": "Boeing 787",
+          "airline": "Saudia",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SV.png",
+          "travel_class": "Economy",
+          "flight_number": "SV 372",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 540 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "King Abdulaziz International Airport",
+            "id": "JED",
+            "time": "2025-09-11 01:30"
+          },
+          "arrival_airport": {
+            "name": "Prince Mohammad Bin Abdulaziz International Airport",
+            "id": "MED",
+            "time": "2025-09-11 02:35"
+          },
+          "duration": 65,
+          "airplane": "Airbus A330",
+          "airline": "Saudia",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SV.png",
+          "travel_class": "Economy",
+          "flight_number": "SV 1420",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "Wi-Fi for a fee",
+            "Carbon emissions estimate: 100 kg"
+          ],
+          "overnight": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 145,
+          "name": "King Abdulaziz International Airport",
+          "id": "JED"
+        }
+      ],
+      "total_duration": 580,
+      "carbon_emissions": {
+        "this_flight": 641000,
+        "typical_for_this_route": 870000,
+        "difference_percent": -26
+      },
+      "price": 2738,
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SV.png",
+      "departure_token": "WyJDalJJTUZKUU1GVkpXVkkxYWpSQlRWbGFlRUZDUnkwdExTMHRMUzB0TFMxdmEzWmlPVUZCUVVGQlIyazVlRUZaU1Roc1RTMUJFZ3hUVmpNM01ueFRWakUwTWpBYUN3alEyaEFRQWhvRFJWVlNPQnh3NWNvVCIsW1siQ01OIiwiMjAyNS0wOS0xMCIsIkpFRCIsbnVsbCwiU1YiLCIzNzIiXSxbIkpFRCIsIjIwMjUtMDktMTEiLCJNRUQiLG51bGwsIlNWIiwiMTQyMCJdXV0="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Casablanca Mohammed V International Airport",
+            "id": "CMN",
+            "time": "2025-09-10 10:15"
+          },
+          "arrival_airport": {
+            "name": "Istanbul Airport",
+            "id": "IST",
+            "time": "2025-09-10 16:40"
+          },
+          "duration": 265,
+          "airplane": "Boeing 787",
+          "airline": "Royal Air Maroc",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AT.png",
+          "travel_class": "Economy",
+          "flight_number": "AT 910",
+          "ticket_also_sold_by": [
+            "Turkish Airlines"
+          ],
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 453 kg"
+          ],
+          "often_delayed_by_over_30_min": true
+        },
+        {
+          "departure_airport": {
+            "name": "Istanbul Airport",
+            "id": "IST",
+            "time": "2025-09-10 20:55"
+          },
+          "arrival_airport": {
+            "name": "Prince Mohammad Bin Abdulaziz International Airport",
+            "id": "MED",
+            "time": "2025-09-11 00:25"
+          },
+          "duration": 210,
+          "airplane": "Airbus A321 (Sharklets)",
+          "airline": "Turkish Airlines",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png",
+          "travel_class": "Economy",
+          "flight_number": "TK 136",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "On-demand video",
+            "Carbon emissions estimate: 444 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 255,
+          "name": "Istanbul Airport",
+          "id": "IST"
+        }
+      ],
+      "total_duration": 730,
+      "carbon_emissions": {
+        "this_flight": 897000,
+        "typical_for_this_route": 870000,
+        "difference_percent": 3
+      },
+      "price": 2878,
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+      "departure_token": "WyJDalJJTUZKUU1GVkpXVkkxYWpSQlRWbGFlRUZDUnkwdExTMHRMUzB0TFMxdmEzWmlPVUZCUVVGQlIyazVlRUZaU1Roc1RTMUJFZ3RCVkRreE1IeFVTekV6TmhvTENMUElFUkFDR2dORlZWSTRISEM3eXhRPSIsW1siQ01OIiwiMjAyNS0wOS0xMCIsIklTVCIsbnVsbCwiQVQiLCI5MTAiXSxbIklTVCIsIjIwMjUtMDktMTAiLCJNRUQiLG51bGwsIlRLIiwiMTM2Il1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Casablanca Mohammed V International Airport",
+            "id": "CMN",
+            "time": "2025-09-10 07:40"
+          },
+          "arrival_airport": {
+            "name": "King Abdulaziz International Airport",
+            "id": "JED",
+            "time": "2025-09-10 15:50"
+          },
+          "duration": 370,
+          "airplane": "Boeing 787",
+          "airline": "Saudia",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SV.png",
+          "travel_class": "Economy",
+          "flight_number": "SV 376",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 626 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "King Abdulaziz International Airport",
+            "id": "JED",
+            "time": "2025-09-10 20:20"
+          },
+          "arrival_airport": {
+            "name": "Prince Mohammad Bin Abdulaziz International Airport",
+            "id": "MED",
+            "time": "2025-09-10 21:25"
+          },
+          "duration": 65,
+          "airplane": "Airbus A320",
+          "airline": "Saudia",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SV.png",
+          "travel_class": "Business Class",
+          "flight_number": "SV 1430",
+          "extensions": [
+            "Extra reclining seat",
+            "Free Wi-Fi",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 179 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 270,
+          "name": "King Abdulaziz International Airport",
+          "id": "JED"
+        }
+      ],
+      "total_duration": 705,
+      "carbon_emissions": {
+        "this_flight": 806000,
+        "typical_for_this_route": 870000,
+        "difference_percent": -7
+      },
+      "price": 3168,
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SV.png",
+      "departure_token": "WyJDalJJTUZKUU1GVkpXVkkxYWpSQlRWbGFlRUZDUnkwdExTMHRMUzB0TFMxdmEzWmlPVUZCUVVGQlIyazVlRUZaU1Roc1RTMUJFZ3hUVmpNM05ueFRWakUwTXpBYUN3allxaE1RQWhvRFJWVlNPQnh3MnRRVyIsW1siQ01OIiwiMjAyNS0wOS0xMCIsIkpFRCIsbnVsbCwiU1YiLCIzNzYiXSxbIkpFRCIsIjIwMjUtMDktMTAiLCJNRUQiLG51bGwsIlNWIiwiMTQzMCJdXV0="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Casablanca Mohammed V International Airport",
+            "id": "CMN",
+            "time": "2025-09-10 13:30"
+          },
+          "arrival_airport": {
+            "name": "Cairo International Airport",
+            "id": "CAI",
+            "time": "2025-09-10 20:20"
+          },
+          "duration": 290,
+          "airplane": "Airbus A321",
+          "airline": "EgyptAir",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/MS.png",
+          "travel_class": "Business Class",
+          "flight_number": "MS 848",
+          "extensions": [
+            "Extra reclining seat",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 1036 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Cairo International Airport",
+            "id": "CAI",
+            "time": "2025-09-10 23:30"
+          },
+          "arrival_airport": {
+            "name": "Prince Mohammad Bin Abdulaziz International Airport",
+            "id": "MED",
+            "time": "2025-09-11 01:20"
+          },
+          "duration": 110,
+          "airplane": "Airbus A330",
+          "airline": "EgyptAir",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/MS.png",
+          "travel_class": "Business Class",
+          "flight_number": "MS 675",
+          "extensions": [
+            "Extra reclining seat",
+            "In-seat power outlet",
+            "Carbon emissions estimate: 849 kg"
+          ],
+          "often_delayed_by_over_30_min": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 190,
+          "name": "Cairo International Airport",
+          "id": "CAI"
+        }
+      ],
+      "total_duration": 590,
+      "carbon_emissions": {
+        "this_flight": 1886000,
+        "typical_for_this_route": 870000,
+        "difference_percent": 117
+      },
+      "price": 3216,
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/MS.png",
+      "departure_token": "WyJDalJJTUZKUU1GVkpXVkkxYWpSQlRWbGFlRUZDUnkwdExTMHRMUzB0TFMxdmEzWmlPVUZCUVVGQlIyazVlRUZaU1Roc1RTMUJFZ3ROVXpnME9IeE5VelkzTlJvTENLSFFFeEFDR2dORlZWSTRISERmZ0JjPSIsW1siQ01OIiwiMjAyNS0wOS0xMCIsIkNBSSIsbnVsbCwiTVMiLCI4NDgiXSxbIkNBSSIsIjIwMjUtMDktMTAiLCJNRUQiLG51bGwsIk1TIiwiNjc1Il1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Casablanca Mohammed V International Airport",
+            "id": "CMN",
+            "time": "2025-09-10 02:00"
+          },
+          "arrival_airport": {
+            "name": "Prince Mohammad Bin Abdulaziz International Airport",
+            "id": "MED",
+            "time": "2025-09-10 14:20"
+          },
+          "duration": 740,
+          "airplane": "Boeing 777",
+          "airline": "Qatar Airways",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/QR.png",
+          "travel_class": "Business",
+          "flight_number": "QR 342",
+          "legroom": "30 in",
+          "extensions": [
+            "Free Wi-Fi",
+            "Carbon emissions estimate: 496 kg"
+          ]
+        }
+      ],
+      "total_duration": 740,
+      "carbon_emissions": {
+        "this_flight": 496000,
+        "typical_for_this_route": 870000,
+        "difference_percent": -43
+      },
+      "price": 1373,
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/QR.png"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Casablanca Mohammed V International Airport",
+            "id": "CMN",
+            "time": "2025-09-10 04:00"
+          },
+          "arrival_airport": {
+            "name": "Prince Mohammad Bin Abdulaziz International Airport",
+            "id": "MED",
+            "time": "2025-09-10 08:37"
+          },
+          "duration": 277,
+          "airplane": "Airbus A380",
+          "airline": "Emirates",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EK.png",
+          "travel_class": "Premium Economy",
+          "flight_number": "EK 167",
+          "legroom": "30 in",
+          "extensions": [
+            "Free Wi-Fi",
+            "Carbon emissions estimate: 1129 kg"
+          ]
+        }
+      ],
+      "total_duration": 277,
+      "carbon_emissions": {
+        "this_flight": 1129000,
+        "typical_for_this_route": 870000,
+        "difference_percent": 30
+      },
+      "price": 1235,
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EK.png"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Casablanca Mohammed V International Airport",
+            "id": "CMN",
+            "time": "2025-09-10 06:00"
+          },
+          "arrival_airport": {
+            "name": "Prince Mohammad Bin Abdulaziz International Airport",
+            "id": "MED",
+            "time": "2025-09-10 19:51"
+          },
+          "duration": 831,
+          "airplane": "Airbus A330",
+          "airline": "Royal Air Maroc",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AT.png",
+          "travel_class": "Business",
+          "flight_number": "AT 884",
+          "legroom": "31 in",
+          "extensions": [
+            "On-demand video",
+            "Carbon emissions estimate: 501 kg"
+          ]
+        }
+      ],
+      "total_duration": 831,
+      "carbon_emissions": {
+        "this_flight": 501000,
+        "typical_for_this_route": 870000,
+        "difference_percent": -42
+      },
+      "price": 3125,
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AT.png"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Casablanca Mohammed V International Airport",
+            "id": "CMN",
+            "time": "2025-09-10 08:00"
+          },
+          "arrival_airport": {
+            "name": "Prince Mohammad Bin Abdulaziz International Airport",
+            "id": "MED",
+            "time": "2025-09-10 16:29"
+          },
+          "duration": 509,
+          "airplane": "Airbus A321",
+          "airline": "Air France",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AF.png",
+          "travel_class": "Premium Economy",
+          "flight_number": "AF 542",
+          "legroom": "34 in",
+          "extensions": [
+            "Free Wi-Fi",
+            "Carbon emissions estimate: 404 kg"
+          ]
+        }
+      ],
+      "total_duration": 509,
+      "carbon_emissions": {
+        "this_flight": 404000,
+        "typical_for_this_route": 870000,
+        "difference_percent": -54
+      },
+      "price": 3295,
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AF.png"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Casablanca Mohammed V International Airport",
+            "id": "CMN",
+            "time": "2025-09-10 10:00"
+          },
+          "arrival_airport": {
+            "name": "Prince Mohammad Bin Abdulaziz International Airport",
+            "id": "MED",
+            "time": "2025-09-10 23:05"
+          },
+          "duration": 785,
+          "airplane": "Boeing 787",
+          "airline": "Air France",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AF.png",
+          "travel_class": "Economy",
+          "flight_number": "AF 105",
+          "legroom": "31 in",
+          "extensions": [
+            "On-demand video",
+            "Carbon emissions estimate: 402 kg"
+          ]
+        }
+      ],
+      "total_duration": 785,
+      "carbon_emissions": {
+        "this_flight": 402000,
+        "typical_for_this_route": 870000,
+        "difference_percent": -54
+      },
+      "price": 2444,
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AF.png"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Casablanca Mohammed V International Airport",
+            "id": "CMN",
+            "time": "2025-09-10 12:00"
+          },
+          "arrival_airport": {
+            "name": "Prince Mohammad Bin Abdulaziz International Airport",
+            "id": "MED",
+            "time": "2025-09-10 21:48"
+          },
+          "duration": 588,
+          "airplane": "Boeing 787",
+          "airline": "Air France",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AF.png",
+          "travel_class": "Economy",
+          "flight_number": "AF 861",
+          "legroom": "34 in",
+          "extensions": [
+            "On-demand video",
+            "Carbon emissions estimate: 1579 kg"
+          ]
+        }
+      ],
+      "total_duration": 588,
+      "carbon_emissions": {
+        "this_flight": 1579000,
+        "typical_for_this_route": 870000,
+        "difference_percent": 81
+      },
+      "price": 1921,
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AF.png"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Casablanca Mohammed V International Airport",
+            "id": "CMN",
+            "time": "2025-09-10 14:00"
+          },
+          "arrival_airport": {
+            "name": "Prince Mohammad Bin Abdulaziz International Airport",
+            "id": "MED",
+            "time": "2025-09-10 18:29"
+          },
+          "duration": 269,
+          "airplane": "Airbus A330",
+          "airline": "Royal Air Maroc",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AT.png",
+          "travel_class": "Economy",
+          "flight_number": "AT 708",
+          "legroom": "32 in",
+          "extensions": [
+            "Free Wi-Fi",
+            "Carbon emissions estimate: 1396 kg"
+          ]
+        }
+      ],
+      "total_duration": 269,
+      "carbon_emissions": {
+        "this_flight": 1396000,
+        "typical_for_this_route": 870000,
+        "difference_percent": 60
+      },
+      "price": 1149,
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AT.png"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Casablanca Mohammed V International Airport",
+            "id": "CMN",
+            "time": "2025-09-10 16:00"
+          },
+          "arrival_airport": {
+            "name": "Prince Mohammad Bin Abdulaziz International Airport",
+            "id": "MED",
+            "time": "2025-09-11 03:44"
+          },
+          "duration": 704,
+          "airplane": "Boeing 787",
+          "airline": "Air France",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AF.png",
+          "travel_class": "Economy",
+          "flight_number": "AF 182",
+          "legroom": "34 in",
+          "extensions": [
+            "In-seat power & USB outlets",
+            "Carbon emissions estimate: 640 kg"
+          ]
+        }
+      ],
+      "total_duration": 704,
+      "carbon_emissions": {
+        "this_flight": 640000,
+        "typical_for_this_route": 870000,
+        "difference_percent": -26
+      },
+      "price": 2616,
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AF.png"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Casablanca Mohammed V International Airport",
+            "id": "CMN",
+            "time": "2025-09-10 18:00"
+          },
+          "arrival_airport": {
+            "name": "Prince Mohammad Bin Abdulaziz International Airport",
+            "id": "MED",
+            "time": "2025-09-10 21:50"
+          },
+          "duration": 230,
+          "airplane": "Airbus A330",
+          "airline": "Saudia",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SV.png",
+          "travel_class": "Premium Economy",
+          "flight_number": "SV 634",
+          "legroom": "32 in",
+          "extensions": [
+            "On-demand video",
+            "Carbon emissions estimate: 808 kg"
+          ]
+        }
+      ],
+      "total_duration": 230,
+      "carbon_emissions": {
+        "this_flight": 808000,
+        "typical_for_this_route": 870000,
+        "difference_percent": -7
+      },
+      "price": 3618,
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SV.png"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Casablanca Mohammed V International Airport",
+            "id": "CMN",
+            "time": "2025-09-10 20:00"
+          },
+          "arrival_airport": {
+            "name": "Prince Mohammad Bin Abdulaziz International Airport",
+            "id": "MED",
+            "time": "2025-09-11 01:45"
+          },
+          "duration": 345,
+          "airplane": "Airbus A320",
+          "airline": "Lufthansa",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
+          "travel_class": "Economy",
+          "flight_number": "LH 472",
+          "legroom": "31 in",
+          "extensions": [
+            "In-seat power & USB outlets",
+            "Carbon emissions estimate: 1122 kg"
+          ]
+        }
+      ],
+      "total_duration": 345,
+      "carbon_emissions": {
+        "this_flight": 1122000,
+        "typical_for_this_route": 870000,
+        "difference_percent": 29
+      },
+      "price": 3874,
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Casablanca Mohammed V International Airport",
+            "id": "CMN",
+            "time": "2025-09-10 22:00"
+          },
+          "arrival_airport": {
+            "name": "Prince Mohammad Bin Abdulaziz International Airport",
+            "id": "MED",
+            "time": "2025-09-11 05:18"
+          },
+          "duration": 438,
+          "airplane": "Airbus A330",
+          "airline": "Royal Air Maroc",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AT.png",
+          "travel_class": "Economy",
+          "flight_number": "AT 881",
+          "legroom": "32 in",
+          "extensions": [
+            "In-seat power & USB outlets",
+            "Carbon emissions estimate: 1033 kg"
+          ]
+        }
+      ],
+      "total_duration": 438,
+      "carbon_emissions": {
+        "this_flight": 1033000,
+        "typical_for_this_route": 870000,
+        "difference_percent": 19
+      },
+      "price": 1883,
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AT.png"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Casablanca Mohammed V International Airport",
+            "id": "CMN",
+            "time": "2025-09-11 00:00"
+          },
+          "arrival_airport": {
+            "name": "Prince Mohammad Bin Abdulaziz International Airport",
+            "id": "MED",
+            "time": "2025-09-11 09:23"
+          },
+          "duration": 563,
+          "airplane": "Airbus A380",
+          "airline": "Etihad Airways",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EY.png",
+          "travel_class": "Economy",
+          "flight_number": "EY 141",
+          "legroom": "31 in",
+          "extensions": [
+            "Wi-Fi for a fee",
+            "Carbon emissions estimate: 927 kg"
+          ]
+        }
+      ],
+      "total_duration": 563,
+      "carbon_emissions": {
+        "this_flight": 927000,
+        "typical_for_this_route": 870000,
+        "difference_percent": 7
+      },
+      "price": 3505,
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EY.png"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Casablanca Mohammed V International Airport",
+            "id": "CMN",
+            "time": "2025-09-11 02:00"
+          },
+          "arrival_airport": {
+            "name": "Prince Mohammad Bin Abdulaziz International Airport",
+            "id": "MED",
+            "time": "2025-09-11 08:28"
+          },
+          "duration": 388,
+          "airplane": "Airbus A380",
+          "airline": "Etihad Airways",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EY.png",
+          "travel_class": "Business",
+          "flight_number": "EY 862",
+          "legroom": "30 in",
+          "extensions": [
+            "Wi-Fi for a fee",
+            "Carbon emissions estimate: 1195 kg"
+          ]
+        }
+      ],
+      "total_duration": 388,
+      "carbon_emissions": {
+        "this_flight": 1195000,
+        "typical_for_this_route": 870000,
+        "difference_percent": 37
+      },
+      "price": 2440,
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EY.png"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Casablanca Mohammed V International Airport",
+            "id": "CMN",
+            "time": "2025-09-11 04:00"
+          },
+          "arrival_airport": {
+            "name": "Prince Mohammad Bin Abdulaziz International Airport",
+            "id": "MED",
+            "time": "2025-09-11 13:53"
+          },
+          "duration": 593,
+          "airplane": "Boeing 777",
+          "airline": "Qatar Airways",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/QR.png",
+          "travel_class": "Premium Economy",
+          "flight_number": "QR 655",
+          "legroom": "32 in",
+          "extensions": [
+            "Free Wi-Fi",
+            "Carbon emissions estimate: 1175 kg"
+          ]
+        }
+      ],
+      "total_duration": 593,
+      "carbon_emissions": {
+        "this_flight": 1175000,
+        "typical_for_this_route": 870000,
+        "difference_percent": 35
+      },
+      "price": 3214,
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/QR.png"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Casablanca Mohammed V International Airport",
+            "id": "CMN",
+            "time": "2025-09-11 06:00"
+          },
+          "arrival_airport": {
+            "name": "Prince Mohammad Bin Abdulaziz International Airport",
+            "id": "MED",
+            "time": "2025-09-11 09:18"
+          },
+          "duration": 198,
+          "airplane": "Airbus A340",
+          "airline": "Lufthansa",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
+          "travel_class": "Business",
+          "flight_number": "LH 123",
+          "legroom": "34 in",
+          "extensions": [
+            "On-demand video",
+            "Carbon emissions estimate: 419 kg"
+          ]
+        }
+      ],
+      "total_duration": 198,
+      "carbon_emissions": {
+        "this_flight": 419000,
+        "typical_for_this_route": 870000,
+        "difference_percent": -52
+      },
+      "price": 2403,
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Casablanca Mohammed V International Airport",
+            "id": "CMN",
+            "time": "2025-09-11 08:00"
+          },
+          "arrival_airport": {
+            "name": "Prince Mohammad Bin Abdulaziz International Airport",
+            "id": "MED",
+            "time": "2025-09-11 20:38"
+          },
+          "duration": 758,
+          "airplane": "Boeing 777",
+          "airline": "Emirates",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EK.png",
+          "travel_class": "Business",
+          "flight_number": "EK 845",
+          "legroom": "31 in",
+          "extensions": [
+            "Wi-Fi for a fee",
+            "Carbon emissions estimate: 1069 kg"
+          ]
+        }
+      ],
+      "total_duration": 758,
+      "carbon_emissions": {
+        "this_flight": 1069000,
+        "typical_for_this_route": 870000,
+        "difference_percent": 23
+      },
+      "price": 3118,
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EK.png"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Casablanca Mohammed V International Airport",
+            "id": "CMN",
+            "time": "2025-09-11 10:00"
+          },
+          "arrival_airport": {
+            "name": "Prince Mohammad Bin Abdulaziz International Airport",
+            "id": "MED",
+            "time": "2025-09-11 18:06"
+          },
+          "duration": 486,
+          "airplane": "Boeing 787",
+          "airline": "Air France",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AF.png",
+          "travel_class": "Economy",
+          "flight_number": "AF 646",
+          "legroom": "34 in",
+          "extensions": [
+            "Wi-Fi for a fee",
+            "Carbon emissions estimate: 1562 kg"
+          ]
+        }
+      ],
+      "total_duration": 486,
+      "carbon_emissions": {
+        "this_flight": 1562000,
+        "typical_for_this_route": 870000,
+        "difference_percent": 80
+      },
+      "price": 3040,
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AF.png"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Casablanca Mohammed V International Airport",
+            "id": "CMN",
+            "time": "2025-09-11 12:00"
+          },
+          "arrival_airport": {
+            "name": "Prince Mohammad Bin Abdulaziz International Airport",
+            "id": "MED",
+            "time": "2025-09-11 22:45"
+          },
+          "duration": 645,
+          "airplane": "Boeing 787",
+          "airline": "Etihad Airways",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EY.png",
+          "travel_class": "Premium Economy",
+          "flight_number": "EY 548",
+          "legroom": "30 in",
+          "extensions": [
+            "Free Wi-Fi",
+            "Carbon emissions estimate: 711 kg"
+          ]
+        }
+      ],
+      "total_duration": 645,
+      "carbon_emissions": {
+        "this_flight": 711000,
+        "typical_for_this_route": 870000,
+        "difference_percent": -18
+      },
+      "price": 2504,
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EY.png"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Casablanca Mohammed V International Airport",
+            "id": "CMN",
+            "time": "2025-09-11 14:00"
+          },
+          "arrival_airport": {
+            "name": "Prince Mohammad Bin Abdulaziz International Airport",
+            "id": "MED",
+            "time": "2025-09-12 02:57"
+          },
+          "duration": 777,
+          "airplane": "Airbus A321",
+          "airline": "Turkish Airlines",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png",
+          "travel_class": "Economy",
+          "flight_number": "TK 562",
+          "legroom": "32 in",
+          "extensions": [
+            "On-demand video",
+            "Carbon emissions estimate: 1034 kg"
+          ]
+        }
+      ],
+      "total_duration": 777,
+      "carbon_emissions": {
+        "this_flight": 1034000,
+        "typical_for_this_route": 870000,
+        "difference_percent": 19
+      },
+      "price": 3221,
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Casablanca Mohammed V International Airport",
+            "id": "CMN",
+            "time": "2025-09-11 16:00"
+          },
+          "arrival_airport": {
+            "name": "Prince Mohammad Bin Abdulaziz International Airport",
+            "id": "MED",
+            "time": "2025-09-12 01:21"
+          },
+          "duration": 561,
+          "airplane": "Airbus A380",
+          "airline": "Etihad Airways",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EY.png",
+          "travel_class": "Premium Economy",
+          "flight_number": "EY 130",
+          "legroom": "34 in",
+          "extensions": [
+            "In-seat power & USB outlets",
+            "Carbon emissions estimate: 1294 kg"
+          ]
+        }
+      ],
+      "total_duration": 561,
+      "carbon_emissions": {
+        "this_flight": 1294000,
+        "typical_for_this_route": 870000,
+        "difference_percent": 49
+      },
+      "price": 3412,
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EY.png"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Casablanca Mohammed V International Airport",
+            "id": "CMN",
+            "time": "2025-09-11 18:00"
+          },
+          "arrival_airport": {
+            "name": "Prince Mohammad Bin Abdulaziz International Airport",
+            "id": "MED",
+            "time": "2025-09-11 21:34"
+          },
+          "duration": 214,
+          "airplane": "Boeing 777",
+          "airline": "Qatar Airways",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/QR.png",
+          "travel_class": "Economy",
+          "flight_number": "QR 164",
+          "legroom": "30 in",
+          "extensions": [
+            "Wi-Fi for a fee",
+            "Carbon emissions estimate: 1376 kg"
+          ]
+        }
+      ],
+      "total_duration": 214,
+      "carbon_emissions": {
+        "this_flight": 1376000,
+        "typical_for_this_route": 870000,
+        "difference_percent": 58
+      },
+      "price": 1545,
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/QR.png"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Casablanca Mohammed V International Airport",
+            "id": "CMN",
+            "time": "2025-09-11 20:00"
+          },
+          "arrival_airport": {
+            "name": "Prince Mohammad Bin Abdulaziz International Airport",
+            "id": "MED",
+            "time": "2025-09-12 05:02"
+          },
+          "duration": 542,
+          "airplane": "Boeing 787",
+          "airline": "Air France",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AF.png",
+          "travel_class": "Business",
+          "flight_number": "AF 946",
+          "legroom": "34 in",
+          "extensions": [
+            "Free Wi-Fi",
+            "Carbon emissions estimate: 1417 kg"
+          ]
+        }
+      ],
+      "total_duration": 542,
+      "carbon_emissions": {
+        "this_flight": 1417000,
+        "typical_for_this_route": 870000,
+        "difference_percent": 63
+      },
+      "price": 3540,
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AF.png"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Casablanca Mohammed V International Airport",
+            "id": "CMN",
+            "time": "2025-09-11 22:00"
+          },
+          "arrival_airport": {
+            "name": "Prince Mohammad Bin Abdulaziz International Airport",
+            "id": "MED",
+            "time": "2025-09-12 12:59"
+          },
+          "duration": 899,
+          "airplane": "Boeing 777",
+          "airline": "Qatar Airways",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/QR.png",
+          "travel_class": "Business",
+          "flight_number": "QR 901",
+          "legroom": "30 in",
+          "extensions": [
+            "In-seat power & USB outlets",
+            "Carbon emissions estimate: 1064 kg"
+          ]
+        }
+      ],
+      "total_duration": 899,
+      "carbon_emissions": {
+        "this_flight": 1064000,
+        "typical_for_this_route": 870000,
+        "difference_percent": 22
+      },
+      "price": 2162,
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/QR.png"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Casablanca Mohammed V International Airport",
+            "id": "CMN",
+            "time": "2025-09-12 00:00"
+          },
+          "arrival_airport": {
+            "name": "Prince Mohammad Bin Abdulaziz International Airport",
+            "id": "MED",
+            "time": "2025-09-12 12:25"
+          },
+          "duration": 745,
+          "airplane": "Boeing 777",
+          "airline": "Emirates",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EK.png",
+          "travel_class": "Premium Economy",
+          "flight_number": "EK 615",
+          "legroom": "32 in",
+          "extensions": [
+            "In-seat power & USB outlets",
+            "Carbon emissions estimate: 448 kg"
+          ]
+        }
+      ],
+      "total_duration": 745,
+      "carbon_emissions": {
+        "this_flight": 448000,
+        "typical_for_this_route": 870000,
+        "difference_percent": -49
+      },
+      "price": 2188,
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EK.png"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Casablanca Mohammed V International Airport",
+            "id": "CMN",
+            "time": "2025-09-12 02:00"
+          },
+          "arrival_airport": {
+            "name": "Prince Mohammad Bin Abdulaziz International Airport",
+            "id": "MED",
+            "time": "2025-09-12 11:10"
+          },
+          "duration": 550,
+          "airplane": "Boeing 737",
+          "airline": "Turkish Airlines",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png",
+          "travel_class": "Business",
+          "flight_number": "TK 882",
+          "legroom": "30 in",
+          "extensions": [
+            "On-demand video",
+            "Carbon emissions estimate: 690 kg"
+          ]
+        }
+      ],
+      "total_duration": 550,
+      "carbon_emissions": {
+        "this_flight": 690000,
+        "typical_for_this_route": 870000,
+        "difference_percent": -21
+      },
+      "price": 3676,
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png"
+    }
+  ],
+  "price_insights": {
+    "lowest_price": 1854,
+    "price_level": "high",
+    "typical_price_range": [
+      1200,
+      1600
+    ]
+  },
+  "airports": [
+    {
+      "departure": [
+        {
+          "airport": {
+            "id": "CMN",
+            "name": "Casablanca Mohammed V International Airport"
+          },
+          "city": "Casablanca",
+          "country": "Morocco",
+          "country_code": "MA",
+          "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSqTf5tE7Q5QBtAT00PHJvD2zRcuykr6iD0rJhJfIOZZoNIYZABQRJ7ccpmLehWthx_adFjzDBYXVgo9A",
+          "thumbnail": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT5OAwW5K0ThVCnmR0G9JcPfDwzidBzSFvRU2EIXCCCK5IHpYDCzVuCNsFVw8ayiniU0vyJTaZJUePC-iItAJ70gU9saNxGP6Xj84wQt1Q"
+        }
+      ],
+      "arrival": [
+        {
+          "airport": {
+            "id": "MED",
+            "name": "Prince Mohammad Bin Abdulaziz International Airport"
+          },
+          "city": "Madinah",
+          "country": "Saudi Arabia",
+          "country_code": "SA",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHu7iqbhRPidm5KE2ymwBHfPFo71PRJhxzCVmisbXPgO0_QhLLqsbYR8aawaC04OrKNB9rQExY_pM-Hg",
+          "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDmn3j59aSWEXF2oA7wuc4ho__4qyClym3sTqPaoh-jL5lEDj0pkXrpy_1Vjv0Hl3MajuOqTb8vGmlvtK9IPQ5GfbuUfPa5zK8p6-v5YA"
+        }
+      ]
+    },
+    {
+      "departure": [
+        {
+          "airport": {
+            "id": "MED",
+            "name": "Prince Mohammad Bin Abdulaziz International Airport"
+          },
+          "city": "Madinah",
+          "country": "Saudi Arabia",
+          "country_code": "SA",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHu7iqbhRPidm5KE2ymwBHfPFo71PRJhxzCVmisbXPgO0_QhLLqsbYR8aawaC04OrKNB9rQExY_pM-Hg",
+          "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDmn3j59aSWEXF2oA7wuc4ho__4qyClym3sTqPaoh-jL5lEDj0pkXrpy_1Vjv0Hl3MajuOqTb8vGmlvtK9IPQ5GfbuUfPa5zK8p6-v5YA"
+        }
+      ],
+      "arrival": [
+        {
+          "airport": {
+            "id": "CMN",
+            "name": "Casablanca Mohammed V International Airport"
+          },
+          "city": "Casablanca",
+          "country": "Morocco",
+          "country_code": "MA",
+          "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSqTf5tE7Q5QBtAT00PHJvD2zRcuykr6iD0rJhJfIOZZoNIYZABQRJ7ccpmLehWthx_adFjzDBYXVgo9A",
+          "thumbnail": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT5OAwW5K0ThVCnmR0G9JcPfDwzidBzSFvRU2EIXCCCK5IHpYDCzVuCNsFVw8ayiniU0vyJTaZJUePC-iItAJ70gU9saNxGP6Xj84wQt1Q"
+        }
+      ]
+    }
+  ]
+}

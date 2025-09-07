@@ -1,0 +1,1920 @@
+{
+  "search_metadata": {
+    "id": "demo12345",
+    "status": "Success",
+    "created_at": "2025-09-07T18:30:00Z",
+    "currency": "EUR"
+  },
+  "search_parameters": {
+    "checkin_date": "2025-09-10",
+    "checkout_date": "2025-09-20",
+    "adults": 2,
+    "children": 0,
+    "rooms": 1,
+    "city": "Mecca & Medina",
+    "country": "Saudi Arabia"
+  },
+  "hotels": [
+    {
+      "hotel_id": "H0001",
+      "name": "Anjum Mecca",
+      "chain": "InterContinental Hotels Group",
+      "address": "120 King Fahd Road, Mecca",
+      "city": "Mecca",
+      "country": "Saudi Arabia",
+      "coordinates": {
+        "latitude": 21.399602,
+        "longitude": 39.870771
+      },
+      "star_rating": 3,
+      "review_score": 8.0,
+      "review_count": 3728,
+      "price": {
+        "total": 3290,
+        "per_night": 329,
+        "currency": "EUR",
+        "nights": 10,
+        "tax_included": true
+      },
+      "rooms": [
+        {
+          "room_id": "1_R1",
+          "name": "Suite",
+          "capacity": 4,
+          "bed_type": "Twin",
+          "price_per_night": 332,
+          "currency": "EUR",
+          "amenities": [
+            "Gym",
+            "Breakfast included",
+            "Swimming pool",
+            "Free WiFi"
+          ],
+          "cancellation_policy": "Non-refundable"
+        },
+        {
+          "room_id": "1_R2",
+          "name": "Deluxe Room",
+          "capacity": 4,
+          "bed_type": "Twin",
+          "price_per_night": 340,
+          "currency": "EUR",
+          "amenities": [
+            "Gym",
+            "Airport shuttle",
+            "Air conditioning",
+            "Free WiFi",
+            "Room service",
+            "Breakfast included"
+          ],
+          "cancellation_policy": "Partial refund available"
+        },
+        {
+          "room_id": "1_R3",
+          "name": "Family Room",
+          "capacity": 5,
+          "bed_type": "Queen",
+          "price_per_night": 341,
+          "currency": "EUR",
+          "amenities": [
+            "Free WiFi",
+            "Restaurant",
+            "Shuttle to Haram",
+            "Breakfast included",
+            "Parking"
+          ],
+          "cancellation_policy": "Free cancellation"
+        },
+        {
+          "room_id": "1_R4",
+          "name": "Deluxe Room",
+          "capacity": 3,
+          "bed_type": "Twin",
+          "price_per_night": 321,
+          "currency": "EUR",
+          "amenities": [
+            "Room service",
+            "Swimming pool",
+            "Breakfast included"
+          ],
+          "cancellation_policy": "Partial refund available"
+        }
+      ],
+      "photos": [
+        "https://dummyimage.com/600x400/000/fff&text=Mecca+Hotel+1",
+        "https://dummyimage.com/600x400/000/fff&text=Mecca+Hotel+2",
+        "https://dummyimage.com/600x400/000/fff&text=Mecca+Hotel+3"
+      ],
+      "facilities": [
+        "Restaurant",
+        "Parking",
+        "Air conditioning",
+        "Gym",
+        "Swimming pool",
+        "Shuttle to Haram",
+        "24h reception"
+      ],
+      "distance_from_center": "4.7 km",
+      "policies": {
+        "check_in": "14:00",
+        "check_out": "12:00",
+        "children_policy": "Children not allowed",
+        "smoking_policy": "Non-smoking rooms"
+      }
+    },
+    {
+      "hotel_id": "H0002",
+      "name": "Hilton Mecca",
+      "chain": "Accor",
+      "address": "84 King Fahd Road, Mecca",
+      "city": "Mecca",
+      "country": "Saudi Arabia",
+      "coordinates": {
+        "latitude": 21.394963,
+        "longitude": 39.893591
+      },
+      "star_rating": 4,
+      "review_score": 9.2,
+      "review_count": 2012,
+      "price": {
+        "total": 555,
+        "per_night": 111,
+        "currency": "EUR",
+        "nights": 5,
+        "tax_included": true
+      },
+      "rooms": [
+        {
+          "room_id": "2_R1",
+          "name": "Suite",
+          "capacity": 2,
+          "bed_type": "Twin",
+          "price_per_night": 122,
+          "currency": "EUR",
+          "amenities": [
+            "Swimming pool",
+            "Airport shuttle",
+            "24h reception",
+            "Gym"
+          ],
+          "cancellation_policy": "Non-refundable"
+        },
+        {
+          "room_id": "2_R2",
+          "name": "Family Room",
+          "capacity": 3,
+          "bed_type": "Double",
+          "price_per_night": 128,
+          "currency": "EUR",
+          "amenities": [
+            "Swimming pool",
+            "Restaurant",
+            "Air conditioning"
+          ],
+          "cancellation_policy": "Partial refund available"
+        },
+        {
+          "room_id": "2_R3",
+          "name": "Deluxe Room",
+          "capacity": 2,
+          "bed_type": "Twin",
+          "price_per_night": 102,
+          "currency": "EUR",
+          "amenities": [
+            "Shuttle to Haram",
+            "Restaurant",
+            "Free WiFi",
+            "Room service"
+          ],
+          "cancellation_policy": "Partial refund available"
+        }
+      ],
+      "photos": [
+        "https://dummyimage.com/600x400/000/fff&text=Mecca+Hotel+1",
+        "https://dummyimage.com/600x400/000/fff&text=Mecca+Hotel+2",
+        "https://dummyimage.com/600x400/000/fff&text=Mecca+Hotel+3"
+      ],
+      "facilities": [
+        "Gym",
+        "Restaurant",
+        "Shuttle to Haram",
+        "Free WiFi",
+        "Airport shuttle"
+      ],
+      "distance_from_center": "3.7 km",
+      "policies": {
+        "check_in": "16:00",
+        "check_out": "12:00",
+        "children_policy": "Children allowed",
+        "smoking_policy": "Non-smoking rooms"
+      }
+    },
+    {
+      "hotel_id": "H0003",
+      "name": "Dar Al Iman Mecca",
+      "chain": "Hilton",
+      "address": "60 King Fahd Road, Mecca",
+      "city": "Mecca",
+      "country": "Saudi Arabia",
+      "coordinates": {
+        "latitude": 21.438354,
+        "longitude": 39.821651
+      },
+      "star_rating": 5,
+      "review_score": 9.4,
+      "review_count": 1001,
+      "price": {
+        "total": 2317,
+        "per_night": 331,
+        "currency": "EUR",
+        "nights": 7,
+        "tax_included": true
+      },
+      "rooms": [
+        {
+          "room_id": "3_R1",
+          "name": "Deluxe Room",
+          "capacity": 2,
+          "bed_type": "Twin",
+          "price_per_night": 339,
+          "currency": "EUR",
+          "amenities": [
+            "Gym",
+            "Parking",
+            "Free WiFi",
+            "Room service",
+            "Airport shuttle",
+            "Restaurant"
+          ],
+          "cancellation_policy": "Partial refund available"
+        },
+        {
+          "room_id": "3_R2",
+          "name": "Suite",
+          "capacity": 2,
+          "bed_type": "Twin",
+          "price_per_night": 353,
+          "currency": "EUR",
+          "amenities": [
+            "24h reception",
+            "Airport shuttle",
+            "Gym"
+          ],
+          "cancellation_policy": "Non-refundable"
+        },
+        {
+          "room_id": "3_R3",
+          "name": "Suite",
+          "capacity": 2,
+          "bed_type": "King",
+          "price_per_night": 350,
+          "currency": "EUR",
+          "amenities": [
+            "Air conditioning",
+            "Parking",
+            "Free WiFi",
+            "Airport shuttle"
+          ],
+          "cancellation_policy": "Partial refund available"
+        },
+        {
+          "room_id": "3_R4",
+          "name": "Deluxe Room",
+          "capacity": 5,
+          "bed_type": "King",
+          "price_per_night": 341,
+          "currency": "EUR",
+          "amenities": [
+            "Breakfast included",
+            "Air conditioning",
+            "24h reception",
+            "Restaurant"
+          ],
+          "cancellation_policy": "Free cancellation"
+        }
+      ],
+      "photos": [
+        "https://dummyimage.com/600x400/000/fff&text=Mecca+Hotel+1",
+        "https://dummyimage.com/600x400/000/fff&text=Mecca+Hotel+2",
+        "https://dummyimage.com/600x400/000/fff&text=Mecca+Hotel+3"
+      ],
+      "facilities": [
+        "Shuttle to Haram",
+        "24h reception",
+        "Gym",
+        "Parking",
+        "Restaurant",
+        "Swimming pool"
+      ],
+      "distance_from_center": "4.3 km",
+      "policies": {
+        "check_in": "15:00",
+        "check_out": "12:00",
+        "children_policy": "Children not allowed",
+        "smoking_policy": "Smoking allowed in designated areas"
+      }
+    },
+    {
+      "hotel_id": "H0004",
+      "name": "InterContinental Mecca",
+      "chain": "Hilton",
+      "address": "143 King Fahd Road, Mecca",
+      "city": "Mecca",
+      "country": "Saudi Arabia",
+      "coordinates": {
+        "latitude": 21.388435,
+        "longitude": 39.835064
+      },
+      "star_rating": 4,
+      "review_score": 8.3,
+      "review_count": 4383,
+      "price": {
+        "total": 2856,
+        "per_night": 357,
+        "currency": "EUR",
+        "nights": 8,
+        "tax_included": true
+      },
+      "rooms": [
+        {
+          "room_id": "4_R1",
+          "name": "Standard Room",
+          "capacity": 2,
+          "bed_type": "Double",
+          "price_per_night": 365,
+          "currency": "EUR",
+          "amenities": [
+            "Parking",
+            "Airport shuttle",
+            "Shuttle to Haram",
+            "24h reception"
+          ],
+          "cancellation_policy": "Free cancellation"
+        },
+        {
+          "room_id": "4_R2",
+          "name": "Family Room",
+          "capacity": 2,
+          "bed_type": "Double",
+          "price_per_night": 379,
+          "currency": "EUR",
+          "amenities": [
+            "Parking",
+            "Swimming pool",
+            "Air conditioning",
+            "Airport shuttle"
+          ],
+          "cancellation_policy": "Partial refund available"
+        },
+        {
+          "room_id": "4_R3",
+          "name": "Family Room",
+          "capacity": 3,
+          "bed_type": "Queen",
+          "price_per_night": 379,
+          "currency": "EUR",
+          "amenities": [
+            "Air conditioning",
+            "Swimming pool",
+            "24h reception",
+            "Breakfast included",
+            "Airport shuttle"
+          ],
+          "cancellation_policy": "Non-refundable"
+        }
+      ],
+      "photos": [
+        "https://dummyimage.com/600x400/000/fff&text=Mecca+Hotel+1",
+        "https://dummyimage.com/600x400/000/fff&text=Mecca+Hotel+2",
+        "https://dummyimage.com/600x400/000/fff&text=Mecca+Hotel+3"
+      ],
+      "facilities": [
+        "24h reception",
+        "Restaurant",
+        "Swimming pool",
+        "Free WiFi",
+        "Air conditioning",
+        "Shuttle to Haram"
+      ],
+      "distance_from_center": "0.8 km",
+      "policies": {
+        "check_in": "15:00",
+        "check_out": "11:00",
+        "children_policy": "Children not allowed",
+        "smoking_policy": "Smoking allowed in designated areas"
+      }
+    },
+    {
+      "hotel_id": "H0005",
+      "name": "InterContinental Mecca",
+      "chain": "Independent",
+      "address": "1 King Fahd Road, Mecca",
+      "city": "Mecca",
+      "country": "Saudi Arabia",
+      "coordinates": {
+        "latitude": 21.358899,
+        "longitude": 39.892528
+      },
+      "star_rating": 3,
+      "review_score": 9.6,
+      "review_count": 2441,
+      "price": {
+        "total": 3890,
+        "per_night": 389,
+        "currency": "EUR",
+        "nights": 10,
+        "tax_included": true
+      },
+      "rooms": [
+        {
+          "room_id": "5_R1",
+          "name": "Suite",
+          "capacity": 2,
+          "bed_type": "King",
+          "price_per_night": 383,
+          "currency": "EUR",
+          "amenities": [
+            "Swimming pool",
+            "24h reception",
+            "Air conditioning",
+            "Free WiFi",
+            "Parking",
+            "Airport shuttle"
+          ],
+          "cancellation_policy": "Partial refund available"
+        },
+        {
+          "room_id": "5_R2",
+          "name": "Family Room",
+          "capacity": 5,
+          "bed_type": "King",
+          "price_per_night": 407,
+          "currency": "EUR",
+          "amenities": [
+            "Free WiFi",
+            "Swimming pool",
+            "Shuttle to Haram",
+            "Airport shuttle",
+            "24h reception"
+          ],
+          "cancellation_policy": "Partial refund available"
+        },
+        {
+          "room_id": "5_R3",
+          "name": "Family Room",
+          "capacity": 3,
+          "bed_type": "Double",
+          "price_per_night": 418,
+          "currency": "EUR",
+          "amenities": [
+            "Shuttle to Haram",
+            "Gym",
+            "Restaurant"
+          ],
+          "cancellation_policy": "Free cancellation"
+        }
+      ],
+      "photos": [
+        "https://dummyimage.com/600x400/000/fff&text=Mecca+Hotel+1",
+        "https://dummyimage.com/600x400/000/fff&text=Mecca+Hotel+2",
+        "https://dummyimage.com/600x400/000/fff&text=Mecca+Hotel+3"
+      ],
+      "facilities": [
+        "Shuttle to Haram",
+        "Room service",
+        "Restaurant",
+        "Parking"
+      ],
+      "distance_from_center": "0.2 km",
+      "policies": {
+        "check_in": "16:00",
+        "check_out": "12:00",
+        "children_policy": "Children allowed",
+        "smoking_policy": "Non-smoking rooms"
+      }
+    },
+    {
+      "hotel_id": "H0006",
+      "name": "Hilton Mecca",
+      "chain": "Independent",
+      "address": "179 King Fahd Road, Mecca",
+      "city": "Mecca",
+      "country": "Saudi Arabia",
+      "coordinates": {
+        "latitude": 21.384344,
+        "longitude": 39.900462
+      },
+      "star_rating": 5,
+      "review_score": 8.8,
+      "review_count": 1598,
+      "price": {
+        "total": 1790,
+        "per_night": 179,
+        "currency": "EUR",
+        "nights": 10,
+        "tax_included": true
+      },
+      "rooms": [
+        {
+          "room_id": "6_R1",
+          "name": "Standard Room",
+          "capacity": 3,
+          "bed_type": "King",
+          "price_per_night": 178,
+          "currency": "EUR",
+          "amenities": [
+            "Gym",
+            "Parking",
+            "Air conditioning",
+            "Free WiFi",
+            "Airport shuttle"
+          ],
+          "cancellation_policy": "Non-refundable"
+        },
+        {
+          "room_id": "6_R2",
+          "name": "Standard Room",
+          "capacity": 4,
+          "bed_type": "King",
+          "price_per_night": 186,
+          "currency": "EUR",
+          "amenities": [
+            "Room service",
+            "Restaurant",
+            "Air conditioning",
+            "Airport shuttle",
+            "Gym",
+            "Breakfast included"
+          ],
+          "cancellation_policy": "Free cancellation"
+        }
+      ],
+      "photos": [
+        "https://dummyimage.com/600x400/000/fff&text=Mecca+Hotel+1",
+        "https://dummyimage.com/600x400/000/fff&text=Mecca+Hotel+2",
+        "https://dummyimage.com/600x400/000/fff&text=Mecca+Hotel+3"
+      ],
+      "facilities": [
+        "Air conditioning",
+        "Swimming pool",
+        "Breakfast included",
+        "Airport shuttle",
+        "Restaurant"
+      ],
+      "distance_from_center": "4.3 km",
+      "policies": {
+        "check_in": "16:00",
+        "check_out": "11:00",
+        "children_policy": "Children allowed",
+        "smoking_policy": "Smoking allowed in designated areas"
+      }
+    },
+    {
+      "hotel_id": "H0007",
+      "name": "Hilton Mecca",
+      "chain": "Hilton",
+      "address": "117 King Fahd Road, Mecca",
+      "city": "Mecca",
+      "country": "Saudi Arabia",
+      "coordinates": {
+        "latitude": 21.359657,
+        "longitude": 39.854697
+      },
+      "star_rating": 4,
+      "review_score": 9.7,
+      "review_count": 719,
+      "price": {
+        "total": 1344,
+        "per_night": 168,
+        "currency": "EUR",
+        "nights": 8,
+        "tax_included": true
+      },
+      "rooms": [
+        {
+          "room_id": "7_R1",
+          "name": "Standard Room",
+          "capacity": 4,
+          "bed_type": "Queen",
+          "price_per_night": 173,
+          "currency": "EUR",
+          "amenities": [
+            "Shuttle to Haram",
+            "24h reception",
+            "Free WiFi",
+            "Parking",
+            "Breakfast included"
+          ],
+          "cancellation_policy": "Partial refund available"
+        },
+        {
+          "room_id": "7_R2",
+          "name": "Standard Room",
+          "capacity": 5,
+          "bed_type": "Double",
+          "price_per_night": 164,
+          "currency": "EUR",
+          "amenities": [
+            "Gym",
+            "Parking",
+            "Air conditioning",
+            "Swimming pool"
+          ],
+          "cancellation_policy": "Partial refund available"
+        },
+        {
+          "room_id": "7_R3",
+          "name": "Suite",
+          "capacity": 2,
+          "bed_type": "Double",
+          "price_per_night": 179,
+          "currency": "EUR",
+          "amenities": [
+            "Air conditioning",
+            "24h reception",
+            "Room service"
+          ],
+          "cancellation_policy": "Non-refundable"
+        },
+        {
+          "room_id": "7_R4",
+          "name": "Family Room",
+          "capacity": 5,
+          "bed_type": "Twin",
+          "price_per_night": 160,
+          "currency": "EUR",
+          "amenities": [
+            "24h reception",
+            "Breakfast included",
+            "Room service",
+            "Parking",
+            "Air conditioning",
+            "Swimming pool"
+          ],
+          "cancellation_policy": "Partial refund available"
+        }
+      ],
+      "photos": [
+        "https://dummyimage.com/600x400/000/fff&text=Mecca+Hotel+1",
+        "https://dummyimage.com/600x400/000/fff&text=Mecca+Hotel+2",
+        "https://dummyimage.com/600x400/000/fff&text=Mecca+Hotel+3"
+      ],
+      "facilities": [
+        "Gym",
+        "Restaurant",
+        "Air conditioning",
+        "Shuttle to Haram",
+        "Room service",
+        "Free WiFi",
+        "Parking"
+      ],
+      "distance_from_center": "4.9 km",
+      "policies": {
+        "check_in": "15:00",
+        "check_out": "12:00",
+        "children_policy": "Children not allowed",
+        "smoking_policy": "Non-smoking rooms"
+      }
+    },
+    {
+      "hotel_id": "H0008",
+      "name": "Dar Al Iman Mecca",
+      "chain": "Independent",
+      "address": "9 King Fahd Road, Mecca",
+      "city": "Mecca",
+      "country": "Saudi Arabia",
+      "coordinates": {
+        "latitude": 21.357411,
+        "longitude": 39.813775
+      },
+      "star_rating": 4,
+      "review_score": 7.5,
+      "review_count": 3244,
+      "price": {
+        "total": 1524,
+        "per_night": 381,
+        "currency": "EUR",
+        "nights": 4,
+        "tax_included": true
+      },
+      "rooms": [
+        {
+          "room_id": "8_R1",
+          "name": "Deluxe Room",
+          "capacity": 2,
+          "bed_type": "Queen",
+          "price_per_night": 393,
+          "currency": "EUR",
+          "amenities": [
+            "Gym",
+            "Airport shuttle",
+            "Shuttle to Haram",
+            "Swimming pool",
+            "Air conditioning"
+          ],
+          "cancellation_policy": "Non-refundable"
+        },
+        {
+          "room_id": "8_R2",
+          "name": "Family Room",
+          "capacity": 4,
+          "bed_type": "Queen",
+          "price_per_night": 380,
+          "currency": "EUR",
+          "amenities": [
+            "Free WiFi",
+            "Breakfast included",
+            "Restaurant"
+          ],
+          "cancellation_policy": "Free cancellation"
+        },
+        {
+          "room_id": "8_R3",
+          "name": "Standard Room",
+          "capacity": 2,
+          "bed_type": "King",
+          "price_per_night": 391,
+          "currency": "EUR",
+          "amenities": [
+            "24h reception",
+            "Gym",
+            "Air conditioning",
+            "Parking"
+          ],
+          "cancellation_policy": "Free cancellation"
+        }
+      ],
+      "photos": [
+        "https://dummyimage.com/600x400/000/fff&text=Mecca+Hotel+1",
+        "https://dummyimage.com/600x400/000/fff&text=Mecca+Hotel+2",
+        "https://dummyimage.com/600x400/000/fff&text=Mecca+Hotel+3"
+      ],
+      "facilities": [
+        "Room service",
+        "Gym",
+        "Swimming pool",
+        "Parking",
+        "Airport shuttle",
+        "Restaurant",
+        "24h reception"
+      ],
+      "distance_from_center": "0.4 km",
+      "policies": {
+        "check_in": "15:00",
+        "check_out": "12:00",
+        "children_policy": "Children allowed",
+        "smoking_policy": "Smoking allowed in designated areas"
+      }
+    },
+    {
+      "hotel_id": "H0009",
+      "name": "Anjum Mecca",
+      "chain": "InterContinental Hotels Group",
+      "address": "194 King Fahd Road, Mecca",
+      "city": "Mecca",
+      "country": "Saudi Arabia",
+      "coordinates": {
+        "latitude": 21.418983,
+        "longitude": 39.894646
+      },
+      "star_rating": 5,
+      "review_score": 9.0,
+      "review_count": 3664,
+      "price": {
+        "total": 2232,
+        "per_night": 279,
+        "currency": "EUR",
+        "nights": 8,
+        "tax_included": true
+      },
+      "rooms": [
+        {
+          "room_id": "9_R1",
+          "name": "Suite",
+          "capacity": 3,
+          "bed_type": "Twin",
+          "price_per_night": 287,
+          "currency": "EUR",
+          "amenities": [
+            "Gym",
+            "24h reception",
+            "Breakfast included",
+            "Air conditioning",
+            "Room service",
+            "Swimming pool"
+          ],
+          "cancellation_policy": "Non-refundable"
+        },
+        {
+          "room_id": "9_R2",
+          "name": "Standard Room",
+          "capacity": 2,
+          "bed_type": "King",
+          "price_per_night": 273,
+          "currency": "EUR",
+          "amenities": [
+            "Swimming pool",
+            "Parking",
+            "Airport shuttle"
+          ],
+          "cancellation_policy": "Non-refundable"
+        },
+        {
+          "room_id": "9_R3",
+          "name": "Deluxe Room",
+          "capacity": 2,
+          "bed_type": "Twin",
+          "price_per_night": 302,
+          "currency": "EUR",
+          "amenities": [
+            "Restaurant",
+            "Room service",
+            "Swimming pool",
+            "Parking"
+          ],
+          "cancellation_policy": "Free cancellation"
+        }
+      ],
+      "photos": [
+        "https://dummyimage.com/600x400/000/fff&text=Mecca+Hotel+1",
+        "https://dummyimage.com/600x400/000/fff&text=Mecca+Hotel+2",
+        "https://dummyimage.com/600x400/000/fff&text=Mecca+Hotel+3"
+      ],
+      "facilities": [
+        "Gym",
+        "Room service",
+        "Shuttle to Haram",
+        "Restaurant"
+      ],
+      "distance_from_center": "0.8 km",
+      "policies": {
+        "check_in": "15:00",
+        "check_out": "11:00",
+        "children_policy": "Children not allowed",
+        "smoking_policy": "Smoking allowed in designated areas"
+      }
+    },
+    {
+      "hotel_id": "H0010",
+      "name": "Dar Al Iman Mecca",
+      "chain": "Accor",
+      "address": "183 King Fahd Road, Mecca",
+      "city": "Mecca",
+      "country": "Saudi Arabia",
+      "coordinates": {
+        "latitude": 21.345995,
+        "longitude": 39.877564
+      },
+      "star_rating": 4,
+      "review_score": 8.4,
+      "review_count": 4872,
+      "price": {
+        "total": 1432,
+        "per_night": 179,
+        "currency": "EUR",
+        "nights": 8,
+        "tax_included": true
+      },
+      "rooms": [
+        {
+          "room_id": "10_R1",
+          "name": "Standard Room",
+          "capacity": 3,
+          "bed_type": "Double",
+          "price_per_night": 184,
+          "currency": "EUR",
+          "amenities": [
+            "Shuttle to Haram",
+            "Air conditioning",
+            "Restaurant",
+            "Parking"
+          ],
+          "cancellation_policy": "Non-refundable"
+        },
+        {
+          "room_id": "10_R2",
+          "name": "Suite",
+          "capacity": 2,
+          "bed_type": "Twin",
+          "price_per_night": 177,
+          "currency": "EUR",
+          "amenities": [
+            "Shuttle to Haram",
+            "Restaurant",
+            "Air conditioning",
+            "Breakfast included",
+            "Airport shuttle"
+          ],
+          "cancellation_policy": "Non-refundable"
+        },
+        {
+          "room_id": "10_R3",
+          "name": "Standard Room",
+          "capacity": 4,
+          "bed_type": "Queen",
+          "price_per_night": 197,
+          "currency": "EUR",
+          "amenities": [
+            "Gym",
+            "Free WiFi",
+            "24h reception"
+          ],
+          "cancellation_policy": "Free cancellation"
+        }
+      ],
+      "photos": [
+        "https://dummyimage.com/600x400/000/fff&text=Mecca+Hotel+1",
+        "https://dummyimage.com/600x400/000/fff&text=Mecca+Hotel+2",
+        "https://dummyimage.com/600x400/000/fff&text=Mecca+Hotel+3"
+      ],
+      "facilities": [
+        "Shuttle to Haram",
+        "Restaurant",
+        "Air conditioning",
+        "Parking"
+      ],
+      "distance_from_center": "0.2 km",
+      "policies": {
+        "check_in": "14:00",
+        "check_out": "11:00",
+        "children_policy": "Children not allowed",
+        "smoking_policy": "Non-smoking rooms"
+      }
+    },
+    {
+      "hotel_id": "H0011",
+      "name": "InterContinental Medina",
+      "chain": "InterContinental Hotels Group",
+      "address": "151 King Fahd Road, Medina",
+      "city": "Medina",
+      "country": "Saudi Arabia",
+      "coordinates": {
+        "latitude": 24.558921,
+        "longitude": 39.563515
+      },
+      "star_rating": 4,
+      "review_score": 9.7,
+      "review_count": 1666,
+      "price": {
+        "total": 990,
+        "per_night": 99,
+        "currency": "EUR",
+        "nights": 10,
+        "tax_included": true
+      },
+      "rooms": [
+        {
+          "room_id": "11_R1",
+          "name": "Deluxe Room",
+          "capacity": 5,
+          "bed_type": "Twin",
+          "price_per_night": 107,
+          "currency": "EUR",
+          "amenities": [
+            "Gym",
+            "Air conditioning",
+            "Breakfast included"
+          ],
+          "cancellation_policy": "Partial refund available"
+        },
+        {
+          "room_id": "11_R2",
+          "name": "Suite",
+          "capacity": 5,
+          "bed_type": "Double",
+          "price_per_night": 103,
+          "currency": "EUR",
+          "amenities": [
+            "Air conditioning",
+            "Shuttle to Haram",
+            "Airport shuttle",
+            "Restaurant",
+            "Swimming pool"
+          ],
+          "cancellation_policy": "Partial refund available"
+        },
+        {
+          "room_id": "11_R3",
+          "name": "Standard Room",
+          "capacity": 5,
+          "bed_type": "King",
+          "price_per_night": 101,
+          "currency": "EUR",
+          "amenities": [
+            "Swimming pool",
+            "Restaurant",
+            "Shuttle to Haram",
+            "Air conditioning",
+            "Breakfast included",
+            "Airport shuttle"
+          ],
+          "cancellation_policy": "Non-refundable"
+        }
+      ],
+      "photos": [
+        "https://dummyimage.com/600x400/000/fff&text=Medina+Hotel+1",
+        "https://dummyimage.com/600x400/000/fff&text=Medina+Hotel+2",
+        "https://dummyimage.com/600x400/000/fff&text=Medina+Hotel+3"
+      ],
+      "facilities": [
+        "Restaurant",
+        "Gym",
+        "Free WiFi",
+        "Parking",
+        "Room service",
+        "Air conditioning",
+        "24h reception"
+      ],
+      "distance_from_center": "3.4 km",
+      "policies": {
+        "check_in": "14:00",
+        "check_out": "12:00",
+        "children_policy": "Children allowed",
+        "smoking_policy": "Non-smoking rooms"
+      }
+    },
+    {
+      "hotel_id": "H0012",
+      "name": "Hilton Medina",
+      "chain": "Hilton",
+      "address": "116 King Fahd Road, Medina",
+      "city": "Medina",
+      "country": "Saudi Arabia",
+      "coordinates": {
+        "latitude": 24.537286,
+        "longitude": 39.546445
+      },
+      "star_rating": 4,
+      "review_score": 7.1,
+      "review_count": 3379,
+      "price": {
+        "total": 693,
+        "per_night": 99,
+        "currency": "EUR",
+        "nights": 7,
+        "tax_included": true
+      },
+      "rooms": [
+        {
+          "room_id": "12_R1",
+          "name": "Suite",
+          "capacity": 5,
+          "bed_type": "Double",
+          "price_per_night": 127,
+          "currency": "EUR",
+          "amenities": [
+            "Swimming pool",
+            "Restaurant",
+            "Shuttle to Haram",
+            "Airport shuttle",
+            "Air conditioning"
+          ],
+          "cancellation_policy": "Non-refundable"
+        },
+        {
+          "room_id": "12_R2",
+          "name": "Standard Room",
+          "capacity": 2,
+          "bed_type": "Queen",
+          "price_per_night": 122,
+          "currency": "EUR",
+          "amenities": [
+            "Breakfast included",
+            "Swimming pool",
+            "Airport shuttle",
+            "Restaurant",
+            "Air conditioning"
+          ],
+          "cancellation_policy": "Free cancellation"
+        },
+        {
+          "room_id": "12_R3",
+          "name": "Family Room",
+          "capacity": 3,
+          "bed_type": "Queen",
+          "price_per_night": 104,
+          "currency": "EUR",
+          "amenities": [
+            "Free WiFi",
+            "Gym",
+            "Airport shuttle"
+          ],
+          "cancellation_policy": "Free cancellation"
+        },
+        {
+          "room_id": "12_R4",
+          "name": "Deluxe Room",
+          "capacity": 3,
+          "bed_type": "Twin",
+          "price_per_night": 114,
+          "currency": "EUR",
+          "amenities": [
+            "Parking",
+            "Restaurant",
+            "Airport shuttle",
+            "24h reception",
+            "Free WiFi"
+          ],
+          "cancellation_policy": "Partial refund available"
+        }
+      ],
+      "photos": [
+        "https://dummyimage.com/600x400/000/fff&text=Medina+Hotel+1",
+        "https://dummyimage.com/600x400/000/fff&text=Medina+Hotel+2",
+        "https://dummyimage.com/600x400/000/fff&text=Medina+Hotel+3"
+      ],
+      "facilities": [
+        "Air conditioning",
+        "Room service",
+        "24h reception",
+        "Gym",
+        "Parking",
+        "Free WiFi",
+        "Airport shuttle"
+      ],
+      "distance_from_center": "4.7 km",
+      "policies": {
+        "check_in": "14:00",
+        "check_out": "11:00",
+        "children_policy": "Children allowed",
+        "smoking_policy": "Smoking allowed in designated areas"
+      }
+    },
+    {
+      "hotel_id": "H0013",
+      "name": "Swissotel Medina",
+      "chain": "Independent",
+      "address": "69 King Fahd Road, Medina",
+      "city": "Medina",
+      "country": "Saudi Arabia",
+      "coordinates": {
+        "latitude": 24.517934,
+        "longitude": 39.527327
+      },
+      "star_rating": 5,
+      "review_score": 9.0,
+      "review_count": 3727,
+      "price": {
+        "total": 930,
+        "per_night": 310,
+        "currency": "EUR",
+        "nights": 3,
+        "tax_included": true
+      },
+      "rooms": [
+        {
+          "room_id": "13_R1",
+          "name": "Suite",
+          "capacity": 2,
+          "bed_type": "Twin",
+          "price_per_night": 337,
+          "currency": "EUR",
+          "amenities": [
+            "Breakfast included",
+            "Parking",
+            "Airport shuttle"
+          ],
+          "cancellation_policy": "Partial refund available"
+        },
+        {
+          "room_id": "13_R2",
+          "name": "Suite",
+          "capacity": 5,
+          "bed_type": "Double",
+          "price_per_night": 324,
+          "currency": "EUR",
+          "amenities": [
+            "Free WiFi",
+            "Breakfast included",
+            "Swimming pool",
+            "24h reception",
+            "Air conditioning",
+            "Parking"
+          ],
+          "cancellation_policy": "Non-refundable"
+        },
+        {
+          "room_id": "13_R3",
+          "name": "Suite",
+          "capacity": 4,
+          "bed_type": "Double",
+          "price_per_night": 312,
+          "currency": "EUR",
+          "amenities": [
+            "Breakfast included",
+            "Parking",
+            "Air conditioning",
+            "Gym",
+            "Shuttle to Haram"
+          ],
+          "cancellation_policy": "Free cancellation"
+        }
+      ],
+      "photos": [
+        "https://dummyimage.com/600x400/000/fff&text=Medina+Hotel+1",
+        "https://dummyimage.com/600x400/000/fff&text=Medina+Hotel+2",
+        "https://dummyimage.com/600x400/000/fff&text=Medina+Hotel+3"
+      ],
+      "facilities": [
+        "Gym",
+        "Restaurant",
+        "Airport shuttle",
+        "Swimming pool"
+      ],
+      "distance_from_center": "0.9 km",
+      "policies": {
+        "check_in": "15:00",
+        "check_out": "11:00",
+        "children_policy": "Children allowed",
+        "smoking_policy": "Smoking allowed in designated areas"
+      }
+    },
+    {
+      "hotel_id": "H0014",
+      "name": "Swissotel Medina",
+      "chain": "InterContinental Hotels Group",
+      "address": "61 King Fahd Road, Medina",
+      "city": "Medina",
+      "country": "Saudi Arabia",
+      "coordinates": {
+        "latitude": 24.477613,
+        "longitude": 39.56861
+      },
+      "star_rating": 3,
+      "review_score": 8.1,
+      "review_count": 4594,
+      "price": {
+        "total": 1524,
+        "per_night": 254,
+        "currency": "EUR",
+        "nights": 6,
+        "tax_included": true
+      },
+      "rooms": [
+        {
+          "room_id": "14_R1",
+          "name": "Standard Room",
+          "capacity": 4,
+          "bed_type": "Queen",
+          "price_per_night": 250,
+          "currency": "EUR",
+          "amenities": [
+            "Parking",
+            "Room service",
+            "Gym",
+            "Free WiFi"
+          ],
+          "cancellation_policy": "Partial refund available"
+        },
+        {
+          "room_id": "14_R2",
+          "name": "Deluxe Room",
+          "capacity": 2,
+          "bed_type": "Double",
+          "price_per_night": 262,
+          "currency": "EUR",
+          "amenities": [
+            "Restaurant",
+            "Room service",
+            "Air conditioning",
+            "Gym"
+          ],
+          "cancellation_policy": "Partial refund available"
+        },
+        {
+          "room_id": "14_R3",
+          "name": "Family Room",
+          "capacity": 4,
+          "bed_type": "Double",
+          "price_per_night": 280,
+          "currency": "EUR",
+          "amenities": [
+            "Gym",
+            "Air conditioning",
+            "Free WiFi",
+            "Room service"
+          ],
+          "cancellation_policy": "Free cancellation"
+        }
+      ],
+      "photos": [
+        "https://dummyimage.com/600x400/000/fff&text=Medina+Hotel+1",
+        "https://dummyimage.com/600x400/000/fff&text=Medina+Hotel+2",
+        "https://dummyimage.com/600x400/000/fff&text=Medina+Hotel+3"
+      ],
+      "facilities": [
+        "Gym",
+        "Shuttle to Haram",
+        "Room service",
+        "Air conditioning"
+      ],
+      "distance_from_center": "3.3 km",
+      "policies": {
+        "check_in": "14:00",
+        "check_out": "12:00",
+        "children_policy": "Children not allowed",
+        "smoking_policy": "Non-smoking rooms"
+      }
+    },
+    {
+      "hotel_id": "H0015",
+      "name": "Swissotel Medina",
+      "chain": "Hilton",
+      "address": "69 King Fahd Road, Medina",
+      "city": "Medina",
+      "country": "Saudi Arabia",
+      "coordinates": {
+        "latitude": 24.487767,
+        "longitude": 39.554219
+      },
+      "star_rating": 3,
+      "review_score": 9.5,
+      "review_count": 2824,
+      "price": {
+        "total": 1757,
+        "per_night": 251,
+        "currency": "EUR",
+        "nights": 7,
+        "tax_included": true
+      },
+      "rooms": [
+        {
+          "room_id": "15_R1",
+          "name": "Standard Room",
+          "capacity": 2,
+          "bed_type": "Double",
+          "price_per_night": 255,
+          "currency": "EUR",
+          "amenities": [
+            "Airport shuttle",
+            "Restaurant",
+            "Room service"
+          ],
+          "cancellation_policy": "Partial refund available"
+        },
+        {
+          "room_id": "15_R2",
+          "name": "Suite",
+          "capacity": 5,
+          "bed_type": "Double",
+          "price_per_night": 273,
+          "currency": "EUR",
+          "amenities": [
+            "Airport shuttle",
+            "Parking",
+            "Gym"
+          ],
+          "cancellation_policy": "Free cancellation"
+        },
+        {
+          "room_id": "15_R3",
+          "name": "Family Room",
+          "capacity": 5,
+          "bed_type": "Queen",
+          "price_per_night": 270,
+          "currency": "EUR",
+          "amenities": [
+            "Room service",
+            "Gym",
+            "Shuttle to Haram",
+            "Restaurant",
+            "24h reception"
+          ],
+          "cancellation_policy": "Free cancellation"
+        },
+        {
+          "room_id": "15_R4",
+          "name": "Standard Room",
+          "capacity": 2,
+          "bed_type": "Queen",
+          "price_per_night": 256,
+          "currency": "EUR",
+          "amenities": [
+            "Free WiFi",
+            "Shuttle to Haram",
+            "Breakfast included",
+            "Airport shuttle"
+          ],
+          "cancellation_policy": "Free cancellation"
+        }
+      ],
+      "photos": [
+        "https://dummyimage.com/600x400/000/fff&text=Medina+Hotel+1",
+        "https://dummyimage.com/600x400/000/fff&text=Medina+Hotel+2",
+        "https://dummyimage.com/600x400/000/fff&text=Medina+Hotel+3"
+      ],
+      "facilities": [
+        "Shuttle to Haram",
+        "Gym",
+        "Free WiFi",
+        "Breakfast included",
+        "Restaurant"
+      ],
+      "distance_from_center": "2.8 km",
+      "policies": {
+        "check_in": "16:00",
+        "check_out": "11:00",
+        "children_policy": "Children not allowed",
+        "smoking_policy": "Non-smoking rooms"
+      }
+    },
+    {
+      "hotel_id": "H0016",
+      "name": "Swissotel Medina",
+      "chain": "Accor",
+      "address": "52 King Fahd Road, Medina",
+      "city": "Medina",
+      "country": "Saudi Arabia",
+      "coordinates": {
+        "latitude": 24.505372,
+        "longitude": 39.598317
+      },
+      "star_rating": 5,
+      "review_score": 8.2,
+      "review_count": 3384,
+      "price": {
+        "total": 2916,
+        "per_night": 324,
+        "currency": "EUR",
+        "nights": 9,
+        "tax_included": true
+      },
+      "rooms": [
+        {
+          "room_id": "16_R1",
+          "name": "Deluxe Room",
+          "capacity": 2,
+          "bed_type": "Queen",
+          "price_per_night": 323,
+          "currency": "EUR",
+          "amenities": [
+            "Parking",
+            "Gym",
+            "Air conditioning",
+            "24h reception"
+          ],
+          "cancellation_policy": "Non-refundable"
+        },
+        {
+          "room_id": "16_R2",
+          "name": "Standard Room",
+          "capacity": 3,
+          "bed_type": "King",
+          "price_per_night": 333,
+          "currency": "EUR",
+          "amenities": [
+            "24h reception",
+            "Free WiFi",
+            "Restaurant",
+            "Room service",
+            "Air conditioning",
+            "Swimming pool"
+          ],
+          "cancellation_policy": "Non-refundable"
+        },
+        {
+          "room_id": "16_R3",
+          "name": "Family Room",
+          "capacity": 3,
+          "bed_type": "Queen",
+          "price_per_night": 351,
+          "currency": "EUR",
+          "amenities": [
+            "Parking",
+            "Shuttle to Haram",
+            "Swimming pool",
+            "Airport shuttle",
+            "Air conditioning"
+          ],
+          "cancellation_policy": "Free cancellation"
+        },
+        {
+          "room_id": "16_R4",
+          "name": "Family Room",
+          "capacity": 4,
+          "bed_type": "Queen",
+          "price_per_night": 344,
+          "currency": "EUR",
+          "amenities": [
+            "Restaurant",
+            "Airport shuttle",
+            "Swimming pool",
+            "Breakfast included",
+            "Shuttle to Haram",
+            "Gym"
+          ],
+          "cancellation_policy": "Partial refund available"
+        }
+      ],
+      "photos": [
+        "https://dummyimage.com/600x400/000/fff&text=Medina+Hotel+1",
+        "https://dummyimage.com/600x400/000/fff&text=Medina+Hotel+2",
+        "https://dummyimage.com/600x400/000/fff&text=Medina+Hotel+3"
+      ],
+      "facilities": [
+        "Room service",
+        "Shuttle to Haram",
+        "Free WiFi",
+        "Breakfast included",
+        "24h reception",
+        "Air conditioning"
+      ],
+      "distance_from_center": "3.6 km",
+      "policies": {
+        "check_in": "15:00",
+        "check_out": "11:00",
+        "children_policy": "Children not allowed",
+        "smoking_policy": "Smoking allowed in designated areas"
+      }
+    },
+    {
+      "hotel_id": "H0017",
+      "name": "Hilton Medina",
+      "chain": "InterContinental Hotels Group",
+      "address": "181 King Fahd Road, Medina",
+      "city": "Medina",
+      "country": "Saudi Arabia",
+      "coordinates": {
+        "latitude": 24.4813,
+        "longitude": 39.54421
+      },
+      "star_rating": 3,
+      "review_score": 8.2,
+      "review_count": 207,
+      "price": {
+        "total": 546,
+        "per_night": 78,
+        "currency": "EUR",
+        "nights": 7,
+        "tax_included": true
+      },
+      "rooms": [
+        {
+          "room_id": "17_R1",
+          "name": "Deluxe Room",
+          "capacity": 3,
+          "bed_type": "Twin",
+          "price_per_night": 85,
+          "currency": "EUR",
+          "amenities": [
+            "Breakfast included",
+            "Parking",
+            "Gym",
+            "Room service",
+            "Airport shuttle"
+          ],
+          "cancellation_policy": "Partial refund available"
+        },
+        {
+          "room_id": "17_R2",
+          "name": "Deluxe Room",
+          "capacity": 3,
+          "bed_type": "Queen",
+          "price_per_night": 80,
+          "currency": "EUR",
+          "amenities": [
+            "Breakfast included",
+            "Restaurant",
+            "Parking",
+            "Air conditioning"
+          ],
+          "cancellation_policy": "Free cancellation"
+        },
+        {
+          "room_id": "17_R3",
+          "name": "Suite",
+          "capacity": 5,
+          "bed_type": "Twin",
+          "price_per_night": 107,
+          "currency": "EUR",
+          "amenities": [
+            "24h reception",
+            "Parking",
+            "Swimming pool",
+            "Free WiFi",
+            "Air conditioning"
+          ],
+          "cancellation_policy": "Non-refundable"
+        },
+        {
+          "room_id": "17_R4",
+          "name": "Family Room",
+          "capacity": 2,
+          "bed_type": "Double",
+          "price_per_night": 92,
+          "currency": "EUR",
+          "amenities": [
+            "Restaurant",
+            "24h reception",
+            "Parking"
+          ],
+          "cancellation_policy": "Partial refund available"
+        }
+      ],
+      "photos": [
+        "https://dummyimage.com/600x400/000/fff&text=Medina+Hotel+1",
+        "https://dummyimage.com/600x400/000/fff&text=Medina+Hotel+2",
+        "https://dummyimage.com/600x400/000/fff&text=Medina+Hotel+3"
+      ],
+      "facilities": [
+        "Room service",
+        "Airport shuttle",
+        "Air conditioning",
+        "Swimming pool"
+      ],
+      "distance_from_center": "4.2 km",
+      "policies": {
+        "check_in": "16:00",
+        "check_out": "11:00",
+        "children_policy": "Children allowed",
+        "smoking_policy": "Smoking allowed in designated areas"
+      }
+    },
+    {
+      "hotel_id": "H0018",
+      "name": "Hilton Medina",
+      "chain": "Hilton",
+      "address": "79 King Fahd Road, Medina",
+      "city": "Medina",
+      "country": "Saudi Arabia",
+      "coordinates": {
+        "latitude": 24.512111,
+        "longitude": 39.618793
+      },
+      "star_rating": 5,
+      "review_score": 8.8,
+      "review_count": 3918,
+      "price": {
+        "total": 1830,
+        "per_night": 183,
+        "currency": "EUR",
+        "nights": 10,
+        "tax_included": true
+      },
+      "rooms": [
+        {
+          "room_id": "18_R1",
+          "name": "Deluxe Room",
+          "capacity": 5,
+          "bed_type": "King",
+          "price_per_night": 191,
+          "currency": "EUR",
+          "amenities": [
+            "Restaurant",
+            "Airport shuttle",
+            "Breakfast included",
+            "Room service",
+            "24h reception"
+          ],
+          "cancellation_policy": "Partial refund available"
+        },
+        {
+          "room_id": "18_R2",
+          "name": "Standard Room",
+          "capacity": 2,
+          "bed_type": "King",
+          "price_per_night": 189,
+          "currency": "EUR",
+          "amenities": [
+            "Air conditioning",
+            "Breakfast included",
+            "Gym",
+            "Airport shuttle"
+          ],
+          "cancellation_policy": "Non-refundable"
+        }
+      ],
+      "photos": [
+        "https://dummyimage.com/600x400/000/fff&text=Medina+Hotel+1",
+        "https://dummyimage.com/600x400/000/fff&text=Medina+Hotel+2",
+        "https://dummyimage.com/600x400/000/fff&text=Medina+Hotel+3"
+      ],
+      "facilities": [
+        "Breakfast included",
+        "Room service",
+        "Air conditioning",
+        "24h reception",
+        "Free WiFi",
+        "Gym"
+      ],
+      "distance_from_center": "1.9 km",
+      "policies": {
+        "check_in": "14:00",
+        "check_out": "11:00",
+        "children_policy": "Children not allowed",
+        "smoking_policy": "Smoking allowed in designated areas"
+      }
+    },
+    {
+      "hotel_id": "H0019",
+      "name": "Pullman Zamzam Medina",
+      "chain": "Independent",
+      "address": "135 King Fahd Road, Medina",
+      "city": "Medina",
+      "country": "Saudi Arabia",
+      "coordinates": {
+        "latitude": 24.553658,
+        "longitude": 39.608333
+      },
+      "star_rating": 3,
+      "review_score": 9.4,
+      "review_count": 287,
+      "price": {
+        "total": 2016,
+        "per_night": 336,
+        "currency": "EUR",
+        "nights": 6,
+        "tax_included": true
+      },
+      "rooms": [
+        {
+          "room_id": "19_R1",
+          "name": "Standard Room",
+          "capacity": 3,
+          "bed_type": "Twin",
+          "price_per_night": 361,
+          "currency": "EUR",
+          "amenities": [
+            "Breakfast included",
+            "Gym",
+            "Room service",
+            "24h reception",
+            "Restaurant",
+            "Airport shuttle"
+          ],
+          "cancellation_policy": "Free cancellation"
+        },
+        {
+          "room_id": "19_R2",
+          "name": "Family Room",
+          "capacity": 3,
+          "bed_type": "Double",
+          "price_per_night": 364,
+          "currency": "EUR",
+          "amenities": [
+            "Shuttle to Haram",
+            "Free WiFi",
+            "Gym",
+            "Room service"
+          ],
+          "cancellation_policy": "Non-refundable"
+        },
+        {
+          "room_id": "19_R3",
+          "name": "Suite",
+          "capacity": 3,
+          "bed_type": "Queen",
+          "price_per_night": 364,
+          "currency": "EUR",
+          "amenities": [
+            "Shuttle to Haram",
+            "Breakfast included",
+            "Restaurant"
+          ],
+          "cancellation_policy": "Free cancellation"
+        },
+        {
+          "room_id": "19_R4",
+          "name": "Standard Room",
+          "capacity": 3,
+          "bed_type": "Double",
+          "price_per_night": 352,
+          "currency": "EUR",
+          "amenities": [
+            "Air conditioning",
+            "Room service",
+            "Shuttle to Haram"
+          ],
+          "cancellation_policy": "Non-refundable"
+        }
+      ],
+      "photos": [
+        "https://dummyimage.com/600x400/000/fff&text=Medina+Hotel+1",
+        "https://dummyimage.com/600x400/000/fff&text=Medina+Hotel+2",
+        "https://dummyimage.com/600x400/000/fff&text=Medina+Hotel+3"
+      ],
+      "facilities": [
+        "Shuttle to Haram",
+        "24h reception",
+        "Free WiFi",
+        "Air conditioning",
+        "Restaurant",
+        "Airport shuttle"
+      ],
+      "distance_from_center": "1.7 km",
+      "policies": {
+        "check_in": "14:00",
+        "check_out": "12:00",
+        "children_policy": "Children allowed",
+        "smoking_policy": "Non-smoking rooms"
+      }
+    },
+    {
+      "hotel_id": "H0020",
+      "name": "Pullman Zamzam Medina",
+      "chain": "Hilton",
+      "address": "161 King Fahd Road, Medina",
+      "city": "Medina",
+      "country": "Saudi Arabia",
+      "coordinates": {
+        "latitude": 24.501187,
+        "longitude": 39.537035
+      },
+      "star_rating": 4,
+      "review_score": 7.7,
+      "review_count": 1297,
+      "price": {
+        "total": 1659,
+        "per_night": 237,
+        "currency": "EUR",
+        "nights": 7,
+        "tax_included": true
+      },
+      "rooms": [
+        {
+          "room_id": "20_R1",
+          "name": "Family Room",
+          "capacity": 5,
+          "bed_type": "Queen",
+          "price_per_night": 266,
+          "currency": "EUR",
+          "amenities": [
+            "Swimming pool",
+            "Shuttle to Haram",
+            "Restaurant",
+            "Airport shuttle",
+            "Gym"
+          ],
+          "cancellation_policy": "Non-refundable"
+        },
+        {
+          "room_id": "20_R2",
+          "name": "Standard Room",
+          "capacity": 5,
+          "bed_type": "Queen",
+          "price_per_night": 233,
+          "currency": "EUR",
+          "amenities": [
+            "24h reception",
+            "Gym",
+            "Parking",
+            "Free WiFi"
+          ],
+          "cancellation_policy": "Partial refund available"
+        },
+        {
+          "room_id": "20_R3",
+          "name": "Suite",
+          "capacity": 3,
+          "bed_type": "Queen",
+          "price_per_night": 263,
+          "currency": "EUR",
+          "amenities": [
+            "Airport shuttle",
+            "Free WiFi",
+            "Parking",
+            "Room service"
+          ],
+          "cancellation_policy": "Free cancellation"
+        },
+        {
+          "room_id": "20_R4",
+          "name": "Deluxe Room",
+          "capacity": 3,
+          "bed_type": "Double",
+          "price_per_night": 252,
+          "currency": "EUR",
+          "amenities": [
+            "Airport shuttle",
+            "Parking",
+            "Breakfast included",
+            "Shuttle to Haram",
+            "24h reception"
+          ],
+          "cancellation_policy": "Free cancellation"
+        }
+      ],
+      "photos": [
+        "https://dummyimage.com/600x400/000/fff&text=Medina+Hotel+1",
+        "https://dummyimage.com/600x400/000/fff&text=Medina+Hotel+2",
+        "https://dummyimage.com/600x400/000/fff&text=Medina+Hotel+3"
+      ],
+      "facilities": [
+        "Shuttle to Haram",
+        "Gym",
+        "Parking",
+        "Airport shuttle",
+        "Room service",
+        "Free WiFi",
+        "Breakfast included"
+      ],
+      "distance_from_center": "3.1 km",
+      "policies": {
+        "check_in": "14:00",
+        "check_out": "11:00",
+        "children_policy": "Children not allowed",
+        "smoking_policy": "Non-smoking rooms"
+      }
+    }
+  ]
+}
