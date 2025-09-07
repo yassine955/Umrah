@@ -1,0 +1,52 @@
+[
+  {
+    "departure": "08:00",
+    "arrival": "09:48",
+    "duration": "Unknown"
+  },
+  {
+    "departure": "09:00",
+    "arrival": "10:54",
+    "duration": "Unknown"
+  },
+  {
+    "departure": "10:50",
+    "arrival": "12:44",
+    "duration": "Unknown"
+  },
+  {
+    "departure": "12:00",
+    "arrival": "13:54",
+    "duration": "Unknown"
+  },
+  {
+    "departure": "15:00",
+    "arrival": "16:54",
+    "duration": "Unknown"
+  },
+  {
+    "departure": "16:00",
+    "arrival": "17:48",
+    "duration": "Unknown"
+  },
+  {
+    "departure": "17:00",
+    "arrival": "18:54",
+    "duration": "Unknown"
+  },
+  {
+    "departure": "18:50",
+    "arrival": "20:44",
+    "duration": "Unknown"
+  },
+  {
+    "departure": "21:00",
+    "arrival": "22:54",
+    "duration": "Unknown"
+  },
+  {
+    "departure": "22:00",
+    "arrival": "23:54",
+    "duration": "Unknown"
+  }
+]

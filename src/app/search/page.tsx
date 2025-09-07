@@ -17,7 +17,8 @@ import {
     Check,
     Hotel,
     CheckCircle,
-    Circle
+    Circle,
+    Train
 } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
@@ -80,15 +81,33 @@ interface Hotel {
     rooms: any[]
 }
 
+interface Train {
+    id: string
+    departure: string
+    arrival: string
+    duration: string
+    trainNumber: string
+    fromStation: string
+    toStation: string
+    route: string
+    price: number
+    currency: string
+    class: string
+    stops: string
+    available: boolean
+    features: string[]
+}
+
 interface SearchData {
     flights: Flight[]
     hotels: {
         medina: Hotel[]
         mecca: Hotel[]
     }
+    trains: Train[]
 }
 
-type Step = 'flights' | 'hotels' | 'summary'
+type Step = 'flights' | 'hotels' | 'trains' | 'summary'
 
 export default function SearchResultsPage() {
     const searchParams = useSearchParams()
@@ -99,6 +118,7 @@ export default function SearchResultsPage() {
     const [selectedFlight, setSelectedFlight] = useState<Flight | null>(null)
     const [selectedMedinaHotel, setSelectedMedinaHotel] = useState<Hotel | null>(null)
     const [selectedMeccaHotel, setSelectedMeccaHotel] = useState<Hotel | null>(null)
+    const [selectedTrain, setSelectedTrain] = useState<Train | null>(null)
 
     const departureCity = searchParams.get('departureCity') || ''
     const destination = searchParams.get('destination') || ''
@@ -161,27 +181,33 @@ export default function SearchResultsPage() {
     }
 
     const calculateTotalPrice = () => {
-        if (!selectedFlight || !selectedMedinaHotel || !selectedMeccaHotel) return 0
+        if (!selectedFlight || !selectedMedinaHotel || !selectedMeccaHotel || !selectedTrain) return 0
 
         const flightPrice = selectedFlight.price
         const medinaHotelPrice = selectedMedinaHotel.pricePerNight * 4 // 4 nights in Medina
         const meccaHotelPrice = selectedMeccaHotel.pricePerNight * 3 // 3 nights in Mecca
+        const trainPrice = selectedTrain.price * 2 // Round trip
 
-        return flightPrice + medinaHotelPrice + meccaHotelPrice
+        return flightPrice + medinaHotelPrice + meccaHotelPrice + trainPrice
     }
 
     const canProceedToHotels = () => {
         return selectedFlight !== null
     }
 
-    const canProceedToSummary = () => {
+    const canProceedToTrains = () => {
         return selectedFlight && selectedMedinaHotel && selectedMeccaHotel
+    }
+
+    const canProceedToSummary = () => {
+        return selectedFlight && selectedMedinaHotel && selectedMeccaHotel && selectedTrain
     }
 
     const renderStepIndicator = () => {
         const steps = [
             { id: 'flights', label: 'Select Flight', icon: Plane },
             { id: 'hotels', label: 'Choose Hotels', icon: Hotel },
+            { id: 'trains', label: 'Select Train', icon: Train },
             { id: 'summary', label: 'Review & Book', icon: CheckCircle }
         ]
 
@@ -194,11 +220,13 @@ export default function SearchResultsPage() {
                         const isCompleted = (
                             (step.id === 'flights' && selectedFlight) ||
                             (step.id === 'hotels' && selectedMedinaHotel && selectedMeccaHotel) ||
+                            (step.id === 'trains' && selectedTrain) ||
                             (step.id === 'summary' && canProceedToSummary())
                         )
                         const isAccessible = (
                             step.id === 'flights' ||
                             (step.id === 'hotels' && canProceedToHotels()) ||
+                            (step.id === 'trains' && canProceedToTrains()) ||
                             (step.id === 'summary' && canProceedToSummary())
                         )
 
@@ -206,12 +234,12 @@ export default function SearchResultsPage() {
                             <div key={step.id} className="flex items-center">
                                 <div
                                     className={`flex items-center justify-center w-10 h-10 rounded-full border-2 ${isCompleted
-                                            ? 'bg-green-600 border-green-600 text-white'
-                                            : isActive
-                                                ? 'bg-blue-600 border-blue-600 text-white'
-                                                : isAccessible
-                                                    ? 'border-gray-300 text-gray-500 hover:border-blue-300'
-                                                    : 'border-gray-200 text-gray-300'
+                                        ? 'bg-green-600 border-green-600 text-white'
+                                        : isActive
+                                            ? 'bg-blue-600 border-blue-600 text-white'
+                                            : isAccessible
+                                                ? 'border-gray-300 text-gray-500 hover:border-blue-300'
+                                                : 'border-gray-200 text-gray-300'
                                         }`}
                                 >
                                     {isCompleted ? (
@@ -251,8 +279,8 @@ export default function SearchResultsPage() {
                         <Card
                             key={flight.id}
                             className={`cursor-pointer transition-all ${selectedFlight?.id === flight.id
-                                    ? 'ring-2 ring-blue-600 border-blue-600'
-                                    : 'hover:shadow-lg'
+                                ? 'ring-2 ring-blue-600 border-blue-600'
+                                : 'hover:shadow-lg'
                                 }`}
                             onClick={() => setSelectedFlight(flight)}
                         >
@@ -388,8 +416,8 @@ export default function SearchResultsPage() {
                             <Card
                                 key={hotel.id}
                                 className={`cursor-pointer transition-all ${selectedMedinaHotel?.id === hotel.id
-                                        ? 'ring-2 ring-green-600 border-green-600'
-                                        : 'hover:shadow-lg'
+                                    ? 'ring-2 ring-green-600 border-green-600'
+                                    : 'hover:shadow-lg'
                                     }`}
                                 onClick={() => setSelectedMedinaHotel(hotel)}
                             >
@@ -459,8 +487,8 @@ export default function SearchResultsPage() {
                             <Card
                                 key={hotel.id}
                                 className={`cursor-pointer transition-all ${selectedMeccaHotel?.id === hotel.id
-                                        ? 'ring-2 ring-blue-600 border-blue-600'
-                                        : 'hover:shadow-lg'
+                                    ? 'ring-2 ring-blue-600 border-blue-600'
+                                    : 'hover:shadow-lg'
                                     }`}
                                 onClick={() => setSelectedMeccaHotel(hotel)}
                             >
@@ -524,6 +552,120 @@ export default function SearchResultsPage() {
                         Back to Flights
                     </Button>
                     <Button
+                        onClick={() => setCurrentStep('trains')}
+                        disabled={!canProceedToTrains()}
+                        className="px-8"
+                    >
+                        Continue to Trains
+                        <ArrowRight className="ml-2 h-4 w-4" />
+                    </Button>
+                </div>
+            </div>
+        )
+    }
+
+    const renderTrainSelection = () => {
+        if (!searchData) return null
+
+        return (
+            <div className="space-y-6">
+                <div className="text-center mb-8">
+                    <h2 className="text-2xl font-bold text-gray-900 mb-2">Choose Your Train</h2>
+                    <p className="text-gray-600">Select a train from Medina to Mecca for your Umrah journey</p>
+                </div>
+
+                <div className="space-y-4">
+                    {searchData.trains.map((train) => (
+                        <Card
+                            key={train.id}
+                            className={`cursor-pointer transition-all ${selectedTrain?.id === train.id
+                                    ? 'ring-2 ring-purple-600 border-purple-600'
+                                    : 'hover:shadow-lg'
+                                }`}
+                            onClick={() => setSelectedTrain(train)}
+                        >
+                            <CardContent className="p-6">
+                                <div className="flex items-center justify-between mb-4">
+                                    <div className="flex items-center gap-3">
+                                        <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center">
+                                            <Train className="h-6 w-6 text-purple-600" />
+                                        </div>
+                                        <div>
+                                            <h3 className="font-semibold text-lg">{train.trainNumber}</h3>
+                                            <p className="text-sm text-gray-600">{train.route}</p>
+                                        </div>
+                                    </div>
+                                    <div className="text-right">
+                                        <div className="text-2xl font-bold text-purple-600">
+                                            €{train.price}
+                                        </div>
+                                        <p className="text-sm text-gray-600">per person</p>
+                                    </div>
+                                </div>
+
+                                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-4">
+                                    <div>
+                                        <h4 className="font-semibold mb-3">Departure</h4>
+                                        <div className="space-y-2">
+                                            <div>
+                                                <p className="font-medium">{train.fromStation}</p>
+                                                <p className="text-sm text-gray-600">{train.departure}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <h4 className="font-semibold mb-3">Journey</h4>
+                                        <div className="space-y-2">
+                                            <div className="flex items-center gap-2">
+                                                <div className="flex-1 h-px bg-gray-300"></div>
+                                                <Clock className="h-4 w-4 text-gray-500" />
+                                                <span className="text-sm text-gray-600">{train.duration}</span>
+                                                <div className="flex-1 h-px bg-gray-300"></div>
+                                            </div>
+                                            <p className="text-sm text-gray-600 text-center">{train.stops}</p>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <h4 className="font-semibold mb-3">Arrival</h4>
+                                        <div className="space-y-2">
+                                            <div>
+                                                <p className="font-medium">{train.toStation}</p>
+                                                <p className="text-sm text-gray-600">{train.arrival}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="flex flex-wrap gap-2">
+                                    <Badge variant="secondary">{train.class}</Badge>
+                                    <Badge variant="secondary">{train.stops}</Badge>
+                                    {train.features.slice(0, 3).map((feature, index) => (
+                                        <Badge key={index} variant="outline">{feature}</Badge>
+                                    ))}
+                                </div>
+
+                                {selectedTrain?.id === train.id && (
+                                    <div className="mt-4 p-3 bg-purple-50 rounded-lg flex items-center gap-2">
+                                        <CheckCircle className="h-5 w-5 text-purple-600" />
+                                        <span className="text-purple-800 font-medium">Selected Train</span>
+                                    </div>
+                                )}
+                            </CardContent>
+                        </Card>
+                    ))}
+                </div>
+
+                <div className="flex justify-between">
+                    <Button
+                        variant="outline"
+                        onClick={() => setCurrentStep('hotels')}
+                    >
+                        <ArrowLeft className="mr-2 h-4 w-4" />
+                        Back to Hotels
+                    </Button>
+                    <Button
                         onClick={() => setCurrentStep('summary')}
                         disabled={!canProceedToSummary()}
                         className="px-8"
@@ -537,11 +679,12 @@ export default function SearchResultsPage() {
     }
 
     const renderSummary = () => {
-        if (!selectedFlight || !selectedMedinaHotel || !selectedMeccaHotel) return null
+        if (!selectedFlight || !selectedMedinaHotel || !selectedMeccaHotel || !selectedTrain) return null
 
         const totalPrice = calculateTotalPrice()
         const medinaHotelTotal = selectedMedinaHotel.pricePerNight * 4
         const meccaHotelTotal = selectedMeccaHotel.pricePerNight * 3
+        const trainTotal = selectedTrain.price * 2 // Round trip
 
         return (
             <div className="space-y-8">
@@ -642,6 +785,30 @@ export default function SearchResultsPage() {
                                     </div>
                                 </CardContent>
                             </Card>
+
+                            <Card>
+                                <CardHeader>
+                                    <CardTitle className="flex items-center gap-2">
+                                        <Train className="h-5 w-5" />
+                                        Train (Round Trip)
+                                    </CardTitle>
+                                </CardHeader>
+                                <CardContent>
+                                    <div className="flex justify-between items-start">
+                                        <div>
+                                            <h4 className="font-semibold">{selectedTrain.trainNumber}</h4>
+                                            <p className="text-sm text-gray-600">{selectedTrain.route}</p>
+                                            <p className="text-sm text-gray-600">{selectedTrain.departure} - {selectedTrain.arrival}</p>
+                                        </div>
+                                        <div className="text-right">
+                                            <div className="text-lg font-bold text-purple-600">
+                                                €{trainTotal}
+                                            </div>
+                                            <p className="text-xs text-gray-600">€{selectedTrain.price}/trip</p>
+                                        </div>
+                                    </div>
+                                </CardContent>
+                            </Card>
                         </div>
                     </div>
 
@@ -665,6 +832,10 @@ export default function SearchResultsPage() {
                                         <span>Mecca Hotel (3 nights)</span>
                                         <span>€{meccaHotelTotal}</span>
                                     </div>
+                                    <div className="flex justify-between">
+                                        <span>Train (Round Trip)</span>
+                                        <span>€{trainTotal}</span>
+                                    </div>
                                     <Separator />
                                     <div className="flex justify-between text-lg font-bold">
                                         <span>Total Package Price</span>
@@ -675,6 +846,7 @@ export default function SearchResultsPage() {
                                 <div className="space-y-2 text-sm text-gray-600">
                                     <p>✓ Round-trip flights included</p>
                                     <p>✓ 7 nights accommodation</p>
+                                    <p>✓ Train from Medina to Mecca</p>
                                     <p>✓ 24/7 customer support</p>
                                     <p>✓ Free cancellation up to 24h before departure</p>
                                 </div>
@@ -687,11 +859,11 @@ export default function SearchResultsPage() {
 
                                 <Button
                                     variant="outline"
-                                    onClick={() => setCurrentStep('hotels')}
+                                    onClick={() => setCurrentStep('trains')}
                                     className="w-full"
                                 >
                                     <ArrowLeft className="mr-2 h-4 w-4" />
-                                    Back to Hotels
+                                    Back to Trains
                                 </Button>
                             </CardContent>
                         </Card>
@@ -759,6 +931,7 @@ export default function SearchResultsPage() {
 
                 {currentStep === 'flights' && renderFlightSelection()}
                 {currentStep === 'hotels' && renderHotelSelection()}
+                {currentStep === 'trains' && renderTrainSelection()}
                 {currentStep === 'summary' && renderSummary()}
             </div>
         </div>

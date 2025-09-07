@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 import flightData from '../../../data/vluchten_expanded.json'
 import hotelData from '../../../data/hotels_mecca_medina.json'
+import trainData from '../../../data/available_tickets.json'
 
 export async function POST(request: NextRequest) {
     try {
@@ -136,6 +137,37 @@ export async function POST(request: NextRequest) {
         medinaHotels.sort((a, b) => a.pricePerNight - b.pricePerNight)
         meccaHotels.sort((a, b) => a.pricePerNight - b.pricePerNight)
 
+        // Process train data for Medina to Mecca
+        const trains = trainData.map((train, index) => ({
+            id: `train-${index + 1}`,
+            departure: train.departure,
+            arrival: train.arrival,
+            duration: train.duration,
+            trainNumber: `HHR${String(index + 1).padStart(3, '0')}`,
+            fromStation: 'Medina',
+            toStation: 'Mecca',
+            route: 'Medina → Mecca',
+            price: 45 + (index * 5), // Dummy pricing: €45-90
+            currency: 'EUR',
+            class: 'Economy',
+            stops: 'Non-stop',
+            available: true,
+            features: [
+                'Air conditioning',
+                'WiFi',
+                'Power outlets',
+                'Comfortable seating',
+                'Luggage storage'
+            ]
+        }))
+
+        // Sort trains by departure time
+        trains.sort((a, b) => {
+            const timeA = a.departure.split(':').map(Number)
+            const timeB = b.departure.split(':').map(Number)
+            return (timeA[0] * 60 + timeA[1]) - (timeB[0] * 60 + timeB[1])
+        })
+
         return NextResponse.json({
             success: true,
             flights,
@@ -143,6 +175,7 @@ export async function POST(request: NextRequest) {
                 medina: medinaHotels,
                 mecca: meccaHotels
             },
+            trains,
             searchParams: {
                 departureCity,
                 destination,
