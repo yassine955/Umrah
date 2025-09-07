@@ -13,6 +13,7 @@ import Link from "next/link"
 export default function HomePage() {
   const [searchParams, setSearchParams] = useState({
     departureCity: "",
+    destination: "MED",
     departureDate: "",
     returnDate: "",
     adults: "1",
@@ -23,6 +24,7 @@ export default function HomePage() {
     // Build search URL with parameters
     const searchUrl = new URL('/search', window.location.origin)
     searchUrl.searchParams.set('departureCity', searchParams.departureCity)
+    searchUrl.searchParams.set('destination', searchParams.destination)
     searchUrl.searchParams.set('departureDate', searchParams.departureDate)
     searchUrl.searchParams.set('returnDate', searchParams.returnDate)
     searchUrl.searchParams.set('adults', searchParams.adults)
@@ -99,13 +101,21 @@ export default function HomePage() {
                       </SelectTrigger>
                       <SelectContent>
                         <SelectItem value="CMN">Casablanca (CMN)</SelectItem>
-                        <SelectItem value="AMS">Amsterdam (AMS)</SelectItem>
-                        <SelectItem value="BRU">Brussels (BRU)</SelectItem>
-                        <SelectItem value="CDG">Paris (CDG)</SelectItem>
-                        <SelectItem value="LHR">London (LHR)</SelectItem>
-                        <SelectItem value="FRA">Frankfurt (FRA)</SelectItem>
-                        <SelectItem value="MAD">Madrid (MAD)</SelectItem>
-                        <SelectItem value="FCO">Rome (FCO)</SelectItem>
+                      </SelectContent>
+                    </Select>
+                  </div>
+
+                  <div className="space-y-2">
+                    <Label htmlFor="destination">Destination</Label>
+                    <Select
+                      value={searchParams.destination}
+                      onValueChange={(value) => setSearchParams(prev => ({ ...prev, destination: value }))}
+                    >
+                      <SelectTrigger>
+                        <SelectValue placeholder="Select destination" />
+                      </SelectTrigger>
+                      <SelectContent>
+                        <SelectItem value="MED">Medina (MED)</SelectItem>
                       </SelectContent>
                     </Select>
                   </div>

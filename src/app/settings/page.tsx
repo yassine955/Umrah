@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react"
 import { useSupabase } from "@/components/providers"
+import { supabase } from "@/lib/supabase"
 import { useRouter } from "next/navigation"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
