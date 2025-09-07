@@ -4,6 +4,7 @@ import { createContext, useContext, useEffect, useState } from 'react'
 import { supabase } from '@/lib/supabase'
 import { User, Session } from '@supabase/supabase-js'
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query"
+import { ThemeProvider } from './theme-provider'
 
 const SupabaseContext = createContext<{
     user: User | null
@@ -55,10 +56,12 @@ export function Providers({ children }: { children: React.ReactNode }) {
     }, [supabase.auth])
 
     return (
-        <QueryClientProvider client={queryClient}>
-            <SupabaseContext.Provider value={{ user, session, loading }}>
-                {children}
-            </SupabaseContext.Provider>
-        </QueryClientProvider>
+        <ThemeProvider defaultTheme="system" storageKey="umrah-theme">
+            <QueryClientProvider client={queryClient}>
+                <SupabaseContext.Provider value={{ user, session, loading }}>
+                    {children}
+                </SupabaseContext.Provider>
+            </QueryClientProvider>
+        </ThemeProvider>
     )
 }
