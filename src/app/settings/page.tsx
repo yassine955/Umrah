@@ -4,6 +4,7 @@ import { useState, useEffect } from "react"
 import { useSupabase } from "@/components/providers"
 import { supabase } from "@/lib/supabase"
 import { useRouter } from "next/navigation"
+import dynamic from "next/dynamic"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -28,8 +29,8 @@ import {
     CheckCircle
 } from "lucide-react"
 
-export default function SettingsPage() {
-    const { user, session } = useSupabase()
+function SettingsPageContent() {
+    const { user, session, loading } = useSupabase()
     const router = useRouter()
     const [isLoading, setIsLoading] = useState(false)
     const [message, setMessage] = useState<{ type: 'success' | 'error', text: string } | null>(null)
@@ -66,12 +67,12 @@ export default function SettingsPage() {
         confirmPassword: ""
     })
 
-    // Redirect if not authenticated
+    // Redirect if not authenticated (only on client side)
     useEffect(() => {
-        if (!session) {
+        if (!loading && !session) {
             router.push("/auth/signin")
         }
-    }, [session, router])
+    }, [session, router, loading])
 
     // Load user data
     useEffect(() => {
@@ -97,7 +98,25 @@ export default function SettingsPage() {
         setIsLoading(true)
         setMessage(null)
 
+        // Basic validation
+        if (!profileForm.fullName.trim()) {
+            setMessage({ type: 'error', text: 'Full name is required' })
+            setIsLoading(false)
+            return
+        }
+
         try {
+            // Check if user is authenticated
+            const { data: { session } } = await supabase.auth.getSession()
+            console.log('Current session:', session?.user?.email)
+
+            if (!session) {
+                setMessage({ type: 'error', text: 'You must be logged in to update your profile' })
+                setIsLoading(false)
+                return
+            }
+
+            // Use Supabase client directly for profile update
             const { error } = await supabase.auth.updateUser({
                 data: {
                     full_name: profileForm.fullName,
@@ -113,12 +132,18 @@ export default function SettingsPage() {
             })
 
             if (error) {
+                console.error('Profile update error:', error)
                 setMessage({ type: 'error', text: error.message })
             } else {
                 setMessage({ type: 'success', text: 'Profile updated successfully!' })
+                // Clear the message after 3 seconds
+                setTimeout(() => setMessage(null), 3000)
+                // Refresh the page to show updated data
+                setTimeout(() => window.location.reload(), 2000)
             }
         } catch (error) {
-            setMessage({ type: 'error', text: 'An unexpected error occurred' })
+            console.error('Profile update error:', error)
+            setMessage({ type: 'error', text: 'An unexpected error occurred. Please try again.' })
         } finally {
             setIsLoading(false)
         }
@@ -128,6 +153,13 @@ export default function SettingsPage() {
         e.preventDefault()
         setIsLoading(true)
         setMessage(null)
+
+        // Validation
+        if (securityForm.newPassword.length < 6) {
+            setMessage({ type: 'error', text: 'Password must be at least 6 characters long' })
+            setIsLoading(false)
+            return
+        }
 
         if (securityForm.newPassword !== securityForm.confirmPassword) {
             setMessage({ type: 'error', text: 'New passwords do not match' })
@@ -145,9 +177,12 @@ export default function SettingsPage() {
             } else {
                 setMessage({ type: 'success', text: 'Password updated successfully!' })
                 setSecurityForm({ currentPassword: "", newPassword: "", confirmPassword: "" })
+                // Clear the message after 3 seconds
+                setTimeout(() => setMessage(null), 3000)
             }
         } catch (error) {
-            setMessage({ type: 'error', text: 'An unexpected error occurred' })
+            console.error('Password update error:', error)
+            setMessage({ type: 'error', text: 'An unexpected error occurred. Please try again.' })
         } finally {
             setIsLoading(false)
         }
@@ -159,6 +194,19 @@ export default function SettingsPage() {
         setMessage({ type: 'success', text: 'Notification preferences updated!' })
     }
 
+    // Show loading state while checking authentication
+    if (loading) {
+        return (
+            <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+                <div className="text-center">
+                    <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-green-600 mx-auto"></div>
+                    <p className="mt-4 text-gray-600">Loading settings...</p>
+                </div>
+            </div>
+        )
+    }
+
+    // Show nothing if not authenticated (will redirect)
     if (!session) {
         return null
     }
@@ -185,6 +233,16 @@ export default function SettingsPage() {
                     </div>
                 )}
 
+                {/* Debug info - remove in production */}
+                {process.env.NODE_ENV === 'development' && !loading && (
+                    <div className="mb-6 p-4 bg-blue-50 border border-blue-200 rounded-lg">
+                        <h3 className="font-semibold text-blue-800 mb-2">Debug Info</h3>
+                        <p className="text-sm text-blue-700">User: {user?.email || 'Not logged in'}</p>
+                        <p className="text-sm text-blue-700">Session: {session ? 'Active' : 'No session'}</p>
+                        <p className="text-sm text-blue-700">Loading: {loading ? 'Yes' : 'No'}</p>
+                    </div>
+                )}
+
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
                     {/* Profile Settings */}
                     <div className="lg:col-span-2">
@@ -202,12 +260,13 @@ export default function SettingsPage() {
                                 <form onSubmit={handleProfileUpdate} className="space-y-6">
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                         <div>
-                                            <Label htmlFor="fullName">Full Name</Label>
+                                            <Label htmlFor="fullName">Full Name *</Label>
                                             <Input
                                                 id="fullName"
                                                 value={profileForm.fullName}
                                                 onChange={(e) => setProfileForm(prev => ({ ...prev, fullName: e.target.value }))}
                                                 placeholder="Enter your full name"
+                                                required
                                             />
                                         </div>
                                         <div>
@@ -339,7 +398,7 @@ export default function SettingsPage() {
                                         </div>
                                     </div>
 
-                                    <Button type="submit" disabled={isLoading} className="w-full">
+                                    <Button type="submit" disabled={isLoading || !profileForm.fullName.trim()} className="w-full">
                                         <Save className="h-4 w-4 mr-2" />
                                         {isLoading ? 'Saving...' : 'Save Profile'}
                                     </Button>
@@ -493,6 +552,12 @@ export default function SettingsPage() {
                                         {user?.created_at ? new Date(user.created_at).toLocaleDateString() : 'N/A'}
                                     </span>
                                 </div>
+                                <div className="flex items-center justify-between">
+                                    <span className="text-sm">Last Updated</span>
+                                    <span className="text-sm text-gray-600">
+                                        {user?.updated_at ? new Date(user.updated_at).toLocaleDateString() : 'N/A'}
+                                    </span>
+                                </div>
                             </CardContent>
                         </Card>
                     </div>
@@ -501,3 +566,16 @@ export default function SettingsPage() {
         </div>
     )
 }
+
+// Export with dynamic import to prevent SSR hydration issues
+export default dynamic(() => Promise.resolve(SettingsPageContent), {
+    ssr: false,
+    loading: () => (
+        <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+            <div className="text-center">
+                <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-green-600 mx-auto"></div>
+                <p className="mt-4 text-gray-600">Loading settings...</p>
+            </div>
+        </div>
+    )
+})
